@@ -1,4 +1,4 @@
-from typing import Dict, Any
+from typing import Any
 from httpx import Client, URL, QueryParams, Response
 from httpx._types import RequestData, RequestFiles
 
