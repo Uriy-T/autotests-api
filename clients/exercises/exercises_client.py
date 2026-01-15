@@ -1,7 +1,7 @@
 from httpx import Response
 from clients.api_client import APIClient
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
-from clients.exercises.exercises_schema import ExerciseCreateRequestSchema, ExerciseUpdateRequestSchema, ExersiceResponseSchema, GetExercisesResponseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, UpdateExerciseRequestSchema, ExersiceResponseSchema, GetExercisesResponseSchema
 
 
 class ExercisesClient(APIClient):
@@ -27,7 +27,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f'/api/v1/exercises/{exercise_id}')
 
-    def create_exercise_api(self, exercise_data: ExerciseCreateRequestSchema):
+    def create_exercise_api(self, exercise_data: CreateExerciseRequestSchema):
         """
         Метод создания упражнения.
 
@@ -36,7 +36,7 @@ class ExercisesClient(APIClient):
         """
         return self.post('/api/v1/exercises', json=exercise_data.model_dump(by_alias=True))
 
-    def update_exercise_api(self, exercise_id: str, data_for_update: ExerciseUpdateRequestSchema) -> Response:
+    def update_exercise_api(self, exercise_id: str, data_for_update: UpdateExerciseRequestSchema) -> Response:
         """
         Метод изменения упражнения по его uuid.
 
@@ -63,11 +63,11 @@ class ExercisesClient(APIClient):
         response = self.get_exercises_api(courseid)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
-    def create_exercise(self, exercise_data: ExerciseCreateRequestSchema) -> ExersiceResponseSchema:
+    def create_exercise(self, exercise_data: CreateExerciseRequestSchema) -> ExersiceResponseSchema:
         response = self.create_exercise_api(exercise_data)
         return ExersiceResponseSchema.model_validate_json(response.text)
 
-    def update_exercise(self, exercise_id: str, data_for_update: ExerciseUpdateRequestSchema) -> ExersiceResponseSchema:
+    def update_exercise(self, exercise_id: str, data_for_update: UpdateExerciseRequestSchema) -> ExersiceResponseSchema:
         response = self.update_exercise_api(exercise_id, data_for_update)
         return ExersiceResponseSchema.model_validate_json(response.text)
 

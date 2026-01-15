@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field, EmailStr
+from tools.fakers import test_data_gen
 
 
 class TokenSchema(BaseModel):
@@ -21,12 +22,14 @@ class LoginRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление токена
     """
-    email: EmailStr
-    password: str
+    email: EmailStr = Field(default_factory=test_data_gen.email)
+    password: str = Field(default_factory=test_data_gen.password)
 
 
 class RefreshRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление токена
     """
-    refresh_token: str = Field(alias='refreshToken')
+    refresh_token: str = Field(alias='refreshToken', default_factory=test_data_gen.sentence())
+
+print(LoginRequestSchema())

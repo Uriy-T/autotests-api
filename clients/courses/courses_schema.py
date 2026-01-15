@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, ConfigDict
 from clients.files.files_schema import FileSchema
 from clients.users.user_schema import UserSchema
+from tools.fakers import test_data_gen
 
 
 class CourseSchema(BaseModel):
@@ -36,13 +37,13 @@ class CreateCourseRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    title: str
-    max_score: int = Field(alias='maxScore')
-    min_score: int = Field(alias='minScore')
-    description: str
-    estimated_time: str = Field(alias='estimatedTime')
-    preview_file_id: str = Field(alias='previewFileId')
-    created_by_user_id: str = Field(alias='createdByUserId')
+    title: str = Field(default_factory=test_data_gen.sentence)
+    max_score: int = Field(alias='maxScore', default_factory=test_data_gen.max_score)
+    min_score: int = Field(alias='minScore', default_factory=test_data_gen.min_score)
+    description: str = Field(default_factory=test_data_gen.text)
+    estimated_time: str = Field(alias='estimatedTime', default_factory=test_data_gen.estimated_time)
+    preview_file_id: str = Field(alias='previewFileId', default_factory=test_data_gen.uuid4)
+    created_by_user_id: str = Field(alias='createdByUserId', default_factory=test_data_gen.uuid4)
 
 
 class UpdateCourseRequestSchema(BaseModel):
@@ -51,8 +52,8 @@ class UpdateCourseRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    title: str | None
-    max_score: int = Field(alias='maxScore')
-    min_score: int = Field(alias='minScore')
-    description: str | None
-    estimated_time: str = Field(alias='estimatedTime')
+    title: str | None = Field(default_factory=test_data_gen.sentence)
+    max_score: int | None = Field(alias='maxScore', default_factory=test_data_gen.max_score)
+    min_score: int | None = Field(alias='minScore', default_factory=test_data_gen.min_score)
+    description: str | None = Field(default_factory=test_data_gen.text)
+    estimated_time: str = Field(alias='estimatedTime', default_factory=test_data_gen.estimated_time)

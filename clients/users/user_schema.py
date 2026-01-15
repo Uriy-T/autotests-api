@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, EmailStr, ConfigDict
-
+from tools.fakers import test_data_gen
 
 class UserSchema(BaseModel):
     """
@@ -20,11 +20,11 @@ class CreateUserRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    email: EmailStr
-    password: str
-    last_name: str = Field(alias='lastName')
-    first_name: str = Field(alias='firstName')
-    middle_name: str = Field(alias='middleName')
+    email: EmailStr = Field(default_factory=test_data_gen.email)
+    password: str = Field(default_factory=test_data_gen.password)
+    last_name: str = Field(alias='lastName', default_factory=test_data_gen.last_name)
+    first_name: str = Field(alias='firstName', default_factory=test_data_gen.first_name)
+    middle_name: str = Field(alias='middleName', default_factory=test_data_gen.middle_name)
 
 
 class CreateUserResponseSchema(BaseModel):
@@ -40,10 +40,10 @@ class UpdateUserRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    email: EmailStr | None
-    last_name: str | None = Field(alias='lastName')
-    first_name: str | None = Field(alias='firstName')
-    middle_name: str | None = Field(alias='middleName')
+    email: EmailStr | None = Field(default_factory=test_data_gen.email)
+    last_name: str | None = Field(alias='lastName', default_factory=test_data_gen.last_name)
+    first_name: str | None = Field(alias='firstName', default_factory=test_data_gen.first_name)
+    middle_name: str | None = Field(alias='middleName', default_factory=test_data_gen.middle_name)
 
 
 class UpdateUserResponseSchema(BaseModel):
