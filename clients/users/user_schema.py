@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, EmailStr, ConfigDict
 from tools.fakers import test_data_gen
 
+
 class UserSchema(BaseModel):
     """
     Описание структуры пользователя.
