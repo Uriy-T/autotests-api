@@ -6,7 +6,7 @@ from clients.users.public_users_client import get_public_users_client, PublicUse
 from clients.users.user_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 
-class UsersFixture(BaseModel):
+class UserFixture(BaseModel):
     request: CreateUserRequestSchema
     response: CreateUserResponseSchema
 
@@ -29,14 +29,14 @@ def public_users_client() -> PublicUsersClient:
 
 
 @pytest.fixture(scope='function')
-def function_create_user(public_users_client: PublicUsersClient) -> UsersFixture:
+def function_create_user(public_users_client: PublicUsersClient) -> UserFixture:
     request = CreateUserRequestSchema()
     response = public_users_client.create_user(request)
-    return UsersFixture(request=request, response=response)
+    return UserFixture(request=request, response=response)
 
 
 @pytest.fixture
-def private_users_client(function_create_user: UsersFixture) -> PrivateUsersClient:
+def private_users_client(function_create_user: UserFixture) -> PrivateUsersClient:
     request_data = function_create_user.authentication_user
     response = get_private_users_client(request_data)
     return response
