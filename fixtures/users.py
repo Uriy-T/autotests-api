@@ -29,14 +29,14 @@ def public_users_client() -> PublicUsersClient:
 
 
 @pytest.fixture(scope='function')
-def function_create_user(public_users_client: PublicUsersClient) -> UserFixture:
+def function_user(public_users_client: PublicUsersClient) -> UserFixture:
     request = CreateUserRequestSchema()
     response = public_users_client.create_user(request)
     return UserFixture(request=request, response=response)
 
 
 @pytest.fixture
-def private_users_client(function_create_user: UserFixture) -> PrivateUsersClient:
-    request_data = function_create_user.authentication_user
+def private_users_client(function_user: UserFixture) -> PrivateUsersClient:
+    request_data = function_user.authentication_user
     response = get_private_users_client(request_data)
     return response

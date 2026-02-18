@@ -29,7 +29,7 @@ class FilesClient(APIClient):
                          data=request.model_dump(by_alias=True, exclude={'upload_file'}),
                          files={'upload_file': open(request.upload_file, 'rb')})
 
-    def delete_file_by_id(self, file_id: str) -> Response:
+    def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления файла.
 

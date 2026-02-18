@@ -27,8 +27,8 @@ class TestUsers:
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
 
-    def test_get_user_me(self, function_create_user: UserFixture, private_users_client: PrivateUsersClient):
-        create_user_response = function_create_user.response
+    def test_get_user_me(self, function_user: UserFixture, private_users_client: PrivateUsersClient):
+        create_user_response = function_user.response
         response = private_users_client.get_user_me_api()
         response_data = GetUserResponseSchema.model_validate_json(response.text)
 
