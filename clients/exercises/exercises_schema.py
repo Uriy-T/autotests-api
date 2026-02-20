@@ -45,7 +45,7 @@ class ExerciseSchema(BaseModel):
     description: str
     estimated_time: str = Field(alias='estimatedTime')
 
-class ExersiceCreateResponseSchema(BaseModel):
+class CreateExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа на запрос об информации о конкретном упражнении.
     """
@@ -56,3 +56,9 @@ class GetExercisesResponseSchema(BaseModel):
     Описание структуры ответа на запрос об информации о списке упражнений.
     """
     exercises: list[ExerciseSchema]
+
+class ExersiceGetByIdResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на запрос об информации о конкретном упражнении.
+    """
+    exercise: ExerciseSchema
