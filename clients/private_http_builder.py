@@ -1,9 +1,8 @@
 from httpx import Client
-from pydantic_core.core_schema import NoneSchema
 
 from clients.authentication.authentication_client import get_authentication_client
 from clients.authentication.authentication_schema import LoginRequestSchema
-from pydantic import BaseModel, EmailStr, ConfigDict
+from pydantic import BaseModel, EmailStr
 
 from functools import lru_cache
 

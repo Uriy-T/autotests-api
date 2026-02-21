@@ -30,6 +30,7 @@ class UpdateExerciseRequestSchema(BaseModel):
     description: str = Field(default_factory=test_data_gen.text)
     estimated_time: str = Field(alias='estimatedTime', default_factory=test_data_gen.estimated_time)
 
+
 class ExerciseSchema(BaseModel):
     """
     Описание структуры объекта "Упражнение" (Exercise).
@@ -45,9 +46,16 @@ class ExerciseSchema(BaseModel):
     description: str
     estimated_time: str = Field(alias='estimatedTime')
 
+
 class CreateExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа на запрос об информации о конкретном упражнении.
+    """
+    exercise: ExerciseSchema
+
+class UpdateExerciseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на запрос об обновлении конкретного упражнения.
     """
     exercise: ExerciseSchema
 
@@ -56,6 +64,7 @@ class GetExercisesResponseSchema(BaseModel):
     Описание структуры ответа на запрос об информации о списке упражнений.
     """
     exercises: list[ExerciseSchema]
+
 
 class ExersiceGetByIdResponseSchema(BaseModel):
     """

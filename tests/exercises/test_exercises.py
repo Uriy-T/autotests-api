@@ -40,7 +40,7 @@ class TestExercises:
         assert_get_exercise_response(response_data, created_exercise)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-        
+
     def test_update_exercise(self,
                              exercises_client: ExercisesClient,
                              function_exercise: ExerciseFixture):
@@ -53,8 +53,3 @@ class TestExercises:
         assert_update_exercise_response(response_data, data_for_update)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-
-
-
-
-        

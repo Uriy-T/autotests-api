@@ -1,6 +1,6 @@
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
-    ExersiceGetByIdResponseSchema, ExerciseSchema
-from fixtures.exercises import function_exercise, ExerciseFixture
+    ExersiceGetByIdResponseSchema, ExerciseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
+
 from tools.assertions.base import assert_equal
 
 
@@ -48,3 +48,21 @@ def assert_get_exercise_response(actual_exercise_data: ExersiceGetByIdResponseSc
     :raises AssertionError: Если данные файла не совпадают.
     """
     assert_exercise(actual_exercise_data.exercise, expected_exercise_data.exercise)
+
+def assert_update_exercise_response(actual_exercise_data: UpdateExerciseResponseSchema, expected_exercise_data: UpdateExerciseRequestSchema):
+    """
+    Проверяет, что данные ответе запроса на обновление задания соответствует данным переданным в этом запросе.
+
+    :param actual_exercise_data: Ответ API при запросе данных о задании.
+    :param expected_exercise_data: Ответ API при создании задания.
+    :raises AssertionError: Если данные файла не совпадают.
+    """
+    assert_equal(actual_exercise_data.exercise.title, expected_exercise_data.title, name='title')
+    assert_equal(actual_exercise_data.exercise.max_score, expected_exercise_data.max_score, name='max_score')
+    assert_equal(actual_exercise_data.exercise.min_score, expected_exercise_data.min_score, name='min_score')
+    assert_equal(actual_exercise_data.exercise.order_index, expected_exercise_data.order_index, name='order_index')
+    assert_equal(actual_exercise_data.exercise.description, expected_exercise_data.description, name='description')
+    assert_equal(actual_exercise_data.exercise.estimated_time, expected_exercise_data.estimated_time, name='estimated_time')
+
+
+
