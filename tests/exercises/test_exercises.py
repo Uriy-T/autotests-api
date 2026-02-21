@@ -1,0 +1,60 @@
+from http import HTTPStatus
+import pytest
+from clients.exercises.exercises_client import ExercisesClient
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
+    ExersiceGetByIdResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
+from fixtures.courses import CoursesFixture
+from fixtures.exercises import ExerciseFixture
+from tools.assertions.base import assert_status_code
+from tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_response, \
+    assert_update_exercise_response
+from tools.assertions.schema import validate_json_schema
+
+
+@pytest.mark.exercises
+@pytest.mark.regression
+class TestExercises:
+
+    def test_create_exercise(self,
+                             exercises_client: ExercisesClient,
+                             function_course: CoursesFixture):
+        request = CreateExerciseRequestSchema(
+            course_id=function_course.response.course.id
+        )
+        response = exercises_client.create_exercise_api(request)
+        response_data = CreateExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_create_exercise_response(response_data, request)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+    def test_get_exercise(self,
+                          exercises_client: ExercisesClient,
+                          function_exercise: ExerciseFixture):
+        created_exercise = function_exercise.response
+        response = exercises_client.get_exercise_api(created_exercise.exercise.id)
+        response_data = ExersiceGetByIdResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_exercise_response(response_data, created_exercise)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+        
+    def test_update_exercise(self,
+                             exercises_client: ExercisesClient,
+                             function_exercise: ExerciseFixture):
+        created_exercise_id = function_exercise.response.exercise.id
+        data_for_update = UpdateExerciseRequestSchema()
+        response = exercises_client.update_exercise_api(created_exercise_id, data_for_update=data_for_update)
+        response_data = UpdateExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_update_exercise_response(response_data, data_for_update)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+
+
+        
