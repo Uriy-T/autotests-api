@@ -66,7 +66,7 @@ class GetExercisesResponseSchema(BaseModel):
     exercises: list[ExerciseSchema]
 
 
-class ExersiceGetByIdResponseSchema(BaseModel):
+class GetExersiceByIdResponseSchema(BaseModel):
     """
     Описание структуры ответа на запрос об информации о конкретном упражнении.
     """

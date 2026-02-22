@@ -1,7 +1,9 @@
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
-    ExersiceGetByIdResponseSchema, ExerciseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
+    GetExersiceByIdResponseSchema, ExerciseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
 
 from tools.assertions.base import assert_equal
+from tools.assertions.errors import assert_internal_error_response
 
 
 def assert_create_exercise_response(actual_exercise_data: CreateExerciseResponseSchema,
@@ -39,7 +41,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     assert_equal(actual.description, expected.description, name='description')
     assert_equal(actual.estimated_time, expected.estimated_time, name='estimated_time')
 
-def assert_get_exercise_response(actual_exercise_data: ExersiceGetByIdResponseSchema, expected_exercise_data: CreateExerciseResponseSchema):
+def assert_get_exercise_response(actual_exercise_data: GetExersiceByIdResponseSchema, expected_exercise_data: CreateExerciseResponseSchema):
     """
     Проверяет, что ответ на получение задания соответствует ответу на его создание.
 
@@ -63,6 +65,17 @@ def assert_update_exercise_response(actual_exercise_data: UpdateExerciseResponse
     assert_equal(actual_exercise_data.exercise.order_index, expected_exercise_data.order_index, name='order_index')
     assert_equal(actual_exercise_data.exercise.description, expected_exercise_data.description, name='description')
     assert_equal(actual_exercise_data.exercise.estimated_time, expected_exercise_data.estimated_time, name='estimated_time')
+
+def assert_exercise_not_found_response(actual_exercise_data: InternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если упражнение не найдено на сервере.
+
+    :param actual_exercise_data: Данные в ответе на запрос о наличии упражнения на сервере.
+    :raises AssertionError: Если фактические данные в ответе не соответствует ошибке "Exercise not found"
+    """
+
+    expected_exercise_data = InternalErrorResponseSchema(detail='Exercise not found')
+    assert_internal_error_response(actual_exercise_data, expected_exercise_data)
 
 
 
