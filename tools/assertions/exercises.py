@@ -1,8 +1,9 @@
 from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
-    GetExersiceByIdResponseSchema, ExerciseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
+    GetExersiceByIdResponseSchema, ExerciseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema, \
+    GetExercisesResponseSchema
 
-from tools.assertions.base import assert_equal
+from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
 
 
@@ -23,6 +24,7 @@ def assert_create_exercise_response(actual_exercise_data: CreateExerciseResponse
     assert_equal(actual_exercise_data.exercise.estimated_time, expected_exercise_data.estimated_time,
                  name='estimated_time')
 
+
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     """
     Проверяет, что фактические данные задания соответствуют ожидаемым.
@@ -41,7 +43,9 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     assert_equal(actual.description, expected.description, name='description')
     assert_equal(actual.estimated_time, expected.estimated_time, name='estimated_time')
 
-def assert_get_exercise_response(actual_exercise_data: GetExersiceByIdResponseSchema, expected_exercise_data: CreateExerciseResponseSchema):
+
+def assert_get_exercise_response(actual_exercise_data: GetExersiceByIdResponseSchema,
+                                 expected_exercise_data: CreateExerciseResponseSchema):
     """
     Проверяет, что ответ на получение задания соответствует ответу на его создание.
 
@@ -51,7 +55,9 @@ def assert_get_exercise_response(actual_exercise_data: GetExersiceByIdResponseSc
     """
     assert_exercise(actual_exercise_data.exercise, expected_exercise_data.exercise)
 
-def assert_update_exercise_response(actual_exercise_data: UpdateExerciseResponseSchema, expected_exercise_data: UpdateExerciseRequestSchema):
+
+def assert_update_exercise_response(actual_exercise_data: UpdateExerciseResponseSchema,
+                                    expected_exercise_data: UpdateExerciseRequestSchema):
     """
     Проверяет, что данные ответе запроса на обновление задания соответствует данным переданным в этом запросе.
 
@@ -64,7 +70,9 @@ def assert_update_exercise_response(actual_exercise_data: UpdateExerciseResponse
     assert_equal(actual_exercise_data.exercise.min_score, expected_exercise_data.min_score, name='min_score')
     assert_equal(actual_exercise_data.exercise.order_index, expected_exercise_data.order_index, name='order_index')
     assert_equal(actual_exercise_data.exercise.description, expected_exercise_data.description, name='description')
-    assert_equal(actual_exercise_data.exercise.estimated_time, expected_exercise_data.estimated_time, name='estimated_time')
+    assert_equal(actual_exercise_data.exercise.estimated_time, expected_exercise_data.estimated_time,
+                 name='estimated_time')
+
 
 def assert_exercise_not_found_response(actual_exercise_data: InternalErrorResponseSchema):
     """
@@ -78,4 +86,16 @@ def assert_exercise_not_found_response(actual_exercise_data: InternalErrorRespon
     assert_internal_error_response(actual_exercise_data, expected_exercise_data)
 
 
+def assert_get_exercises_response(get_exercises_response: GetExercisesResponseSchema,
+                                  create_exercises_response: list[CreateExerciseResponseSchema]):
+    """
+    Проверяет, что ответ на получение списка упражнений соответствует ответам на их создание.
 
+    :param get_exercises_response: Ответ API при запросе списка заданий.
+    :param create_exercises_response: Список API ответов при создании заданий.
+    :raises AssertionError: Если данные не совпадают.
+    """
+    assert_length(get_exercises_response.exercises, create_exercises_response, name='exercises')
+
+    for index, create_exercise_response in enumerate(create_exercises_response):
+        assert_exercise(get_exercises_response.exercises[index], create_exercise_response.exercise)
