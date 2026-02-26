@@ -16,7 +16,7 @@ class ExercisesClient(APIClient):
         :param courseid: идентификатор курса в uuid формате.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f'/api/v1/exercises/{courseid}')
+        return self.get(f'/api/v1/exercises?courseId={courseid}')
 
     def get_exercise_api(self, exercise_id: str) -> Response:
         """

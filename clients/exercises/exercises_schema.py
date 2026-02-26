@@ -71,3 +71,10 @@ class GetExersiceByIdResponseSchema(BaseModel):
     Описание структуры ответа на запрос об информации о конкретном упражнении.
     """
     exercise: ExerciseSchema
+
+class GetExercisesQuerySchema(BaseModel):
+    """
+    Описание структуры запроса на получение списка заданий.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+    course_id: str = Field(alias='courseId')
