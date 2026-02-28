@@ -2,13 +2,14 @@ from httpx import Response
 from clients.api_client import APIClient
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, UpdateExerciseRequestSchema, CreateExerciseResponseSchema, GetExercisesResponseSchema
-
+import allure
 
 class ExercisesClient(APIClient):
     """
     Клиент для работы с /api/v1/exercises
     """
 
+    @allure.step('Get list of exercises')
     def get_exercises_api(self, courseid: str) -> Response:
         """
         Метод получения списка упражнений по uuid курса.
@@ -18,6 +19,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f'/api/v1/exercises?courseId={courseid}')
 
+    @allure.step('Get list of exercise by id')
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения информации о конкретном упражнении по его uuid.
@@ -27,6 +29,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f'/api/v1/exercises/{exercise_id}')
 
+    @allure.step('Create exercise')
     def create_exercise_api(self, exercise_data: CreateExerciseRequestSchema):
         """
         Метод создания упражнения.
@@ -36,6 +39,7 @@ class ExercisesClient(APIClient):
         """
         return self.post('/api/v1/exercises', json=exercise_data.model_dump(by_alias=True))
 
+    @allure.step('Create exercise')
     def update_exercise_api(self, exercise_id: str, data_for_update: UpdateExerciseRequestSchema) -> Response:
         """
         Метод изменения упражнения по его uuid.
@@ -46,6 +50,7 @@ class ExercisesClient(APIClient):
                 """
         return self.patch(f'/api/v1/exercises/{exercise_id}', json=data_for_update.model_dump(by_alias=True))
 
+    @allure.step('Delete exercise')
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления конкретного упражнения по его uuid.
