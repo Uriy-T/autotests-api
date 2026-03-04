@@ -2,10 +2,21 @@ from clients.users.user_schema import CreateUserRequestSchema, CreateUserRespons
     GetUserResponseSchema
 from tools.assertions.base import assert_equal
 import allure
+from tools.logger import get_logger
+
+logger = get_logger('USERS_ASSERTIONS')
 
 
 @allure.step("Check create user response")
 def assert_create_user_response(request: CreateUserRequestSchema, response: CreateUserResponseSchema):
+    """
+    Проверяет, что ответ на создание пользователя соответствует запросу.
+
+    :param request: Исходный запрос на создание пользователя.
+    :param response: Ответ API с данными пользователя.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    """
+    logger.info('Check create user response')
     assert_equal(actual=response.user.email, expected=request.email, name='email')
     assert_equal(actual=response.user.last_name, expected=request.last_name, name='last_name')
     assert_equal(actual=response.user.first_name, expected=request.first_name, name='first_name')
@@ -14,6 +25,14 @@ def assert_create_user_response(request: CreateUserRequestSchema, response: Crea
 
 @allure.step("Check user")
 def assert_user(actual: UserSchema, expected: UserSchema):
+    """
+    Проверяет, что фактические данные пользователя соответствуют ожидаемым.
+
+    :param actual: Фактические данные пользователя.
+    :param expected: Ожидаемые данные пользователя.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    """
+    logger.info('Check user')
     assert_equal(actual=actual.id, expected=expected.id, name='id')
     assert_equal(actual=actual.email, expected=expected.email, name='email')
     assert_equal(actual=actual.first_name, expected=expected.first_name, name='first_name')
@@ -23,4 +42,12 @@ def assert_user(actual: UserSchema, expected: UserSchema):
 
 @allure.step("Check get user response")
 def assert_get_user_response(create_user_response: CreateUserResponseSchema, get_user_response: GetUserResponseSchema):
+    """
+    Проверяет, что ответ на получение пользователя соответствует ответу на его создание.
+
+    :param get_user_response: Ответ API при запросе данных пользователя.
+    :param create_user_response: Ответ API при создании пользователя.
+    :raises AssertionError: Если данные пользователя не совпадают.
+    """
+    logger.info('Check get user response')
     assert_user(actual=get_user_response, expected=create_user_response)
