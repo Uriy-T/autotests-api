@@ -79,15 +79,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Create directories
+        run: |
+            mkdir -p allure-results
+            mkdir -p allure-history        
+
       - name: Get testing Allure history
         uses: actions/download-artifact@v4
         with:
           name: gh-pages-allure-history
+          path: allure-history
 
       - name: Get raw Allure report
         uses: actions/download-artifact@v4
         with:
           name: allure-results
+          path: allure-results
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
@@ -97,7 +104,7 @@ jobs:
           allure_history: allure-history
 
       - name: Deploy report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v4
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
