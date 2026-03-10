@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/e35609cb-a780-4e8d-a375-c898319622ab \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjQxLjg4NjM1OSIsInVzZXJfaWQiOiI3NDRlMDA5Mi1iMzg5LTQ2MGQtYjc5My1hZjBiOGMwZDA5MDgifQ.JpTujOOZBydSBQLrDXWbbz0C7VSr1p59o3RAw5vtJO8' \
+ -H 'content-length: 485' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Металл тревога приятель.","maxScore":87,"minScore":12,"orderIndex":9,"description":"Парень возможно страсть опасность появление при кожа.\nИзображать материя умолять танцевать грустный. Равнодушный выражаться сверкать горький аллея.\nМальчишка холодно заведение войти.","estimatedTime":"5 weeks"}'

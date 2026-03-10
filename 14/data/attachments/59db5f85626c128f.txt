@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjQxLjI5Njc3NiIsInVzZXJfaWQiOiIxOTZhNWIzZC1lMzcyLTRjYzEtYWVmNi00ODA3N2NiMzUzMDQifQ.GdcMK6SiEWXTZIVzzYnJizkcL9YqMzEyVklFxkbVe3o' \
+ -H 'content-length: 567' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Природа запустить мера ремень вперед ломать ученый.","maxScore":58,"minScore":11,"description":"Сохранять армейский смеяться поставить инфекция волк пространство. Умолять сутки сопровождаться прелесть мера. Решетка плод применяться способ даль.","estimatedTime":"6 weeks","previewFileId":"0f9bda2a-72ac-4f6a-9661-679529346798","createdByUserId":"196a5b3d-e372-4cc1-aef6-48077cb35304"}'

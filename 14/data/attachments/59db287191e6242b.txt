@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjQwLjA2MDY4MyIsInVzZXJfaWQiOiI0NGM4NzVjZS0xYjdjLTQxZTYtOTcxOS01MmIwYjU4ZjJjMjQifQ.NoqxhHklLR3Eei-nn0cprLpckuCRo-chQMpQvvecMfk' \
+ -H 'content-length: 682' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Инфекция угол торговля бабочка собеседник художественный еврейский.","maxScore":83,"minScore":6,"description":"Анализ космос выбирать засунуть юный решение. Увеличиваться район выдержать избегать около изредка рабочий. Изучить песня результат вскакивать угроза спорт бабочка. Висеть дьявол падать вывести.","estimatedTime":"6 weeks","previewFileId":"43976777-7180-47f1-92cd-15c4f25479c8","createdByUserId":"44c875ce-1b7c-41e6-9719-52b0b58f2c24"}'

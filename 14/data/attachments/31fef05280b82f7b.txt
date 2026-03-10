@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjM4LjgzNDMzMSIsInVzZXJfaWQiOiJiNmU0OTJjNS0xYjUxLTRjZTItYTgwOS0wM2M5MWQzNzhjYTAifQ.CeIeI-rru34fwUn3FF4fcxypNix0ScVbIef8mTo7_Jc' \
+ -H 'content-length: 518' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Изображать уточнить предоставить строительство.","maxScore":99,"minScore":19,"description":"Анализ чувство факультет собеседник избегать способ четко неожиданный. Результат цепочка перебивать нервно помолчать вперед.","estimatedTime":"3 weeks","previewFileId":"8226f493-c4d0-45dc-9fa7-c9105ff343a2","createdByUserId":"b6e492c5-1b51-4ce2-a809-03c91d378ca0"}'

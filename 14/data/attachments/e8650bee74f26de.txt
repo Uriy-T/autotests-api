@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjQwLjY1MjYzMCIsInVzZXJfaWQiOiIzNTcwZTIzZi0wMTNhLTQ5NDEtOWUyNS03YmMwMzQ2YTQxNjQifQ.-35LEFLUL4TcU0VpwggouyHJuUf0P2bzsLWOOb0gN9g' \
+ -H 'content-length: 429' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Темнеть славный витрина пасть аж возможно.","maxScore":61,"minScore":20,"description":"Эффект очко самостоятельно народ задрать. Порода ученый рабочий ставить изба упорно.","estimatedTime":"6 weeks","previewFileId":"c9f3d786-4741-4b2f-9ddc-4bc0bfd93a52","createdByUserId":"3570e23f-013a-4941-9e25-7bc0346a4164"}'

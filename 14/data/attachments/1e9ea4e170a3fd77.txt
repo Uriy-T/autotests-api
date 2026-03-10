@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises/8f2a2231-0740-4836-8349-3286721dfdb6
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises/8f2a2231-0740-4836-8349-3286721dfdb6
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:60 Check get exercise
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 8f2a2231-0740-4836-8349-3286721dfdb6
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Поговорить неожиданно покидать сверкающий дружно вывести да.
+INFO     BASE ASSERTIONS:base.py:32 Check that "course_id" equals to fecca461-78a9-45b2-a784-478579d6c5b6
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 70
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 27
+INFO     BASE ASSERTIONS:base.py:32 Check that "order_index" equals to 30
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Зарплата цель развитый кидать монета вскакивать. Ребятишки песня скользить полоска идея порода основание. Мера дальний встать.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 6 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

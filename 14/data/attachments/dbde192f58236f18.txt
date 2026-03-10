@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjM3LjMzMDQ2MCIsInVzZXJfaWQiOiI5Njc3NDdkYS05Y2EwLTQwMTYtODc5Yy00NDg0NDFhNmZiY2IifQ.8hIczqCozpI7FlOnYuYmK1psaAwBkAMWToYEW2nd6Yo' \
+ -H 'content-length: 571' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Бетонный конструкция соответствие прошептать кольцо табак манера.","maxScore":76,"minScore":9,"description":"Единый кпсс заявление печатать спалить плод бригада. Более банк рабочий неожиданно. Дружно изучить цель монета угроза металл достоинство.","estimatedTime":"5 weeks","previewFileId":"dc6d4f3c-6f89-4e1e-8de4-eee597b2d5da","createdByUserId":"967747da-9ca0-4016-879c-448441a6fbcb"}'

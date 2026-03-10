@@ -1,0 +1,33 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/courses?userId=967747da-9ca0-4016-879c-448441a6fbcb
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses?userId=967747da-9ca0-4016-879c-448441a6fbcb
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:58 Check get courses response
+INFO     BASE ASSERTIONS:base.py:66 Check that length of courses equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:36 Check course
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 85778f02-2f78-4fc7-b9e1-e867a98e4892
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Бетонный конструкция соответствие прошептать кольцо табак манера.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 76
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 9
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Единый кпсс заявление печатать спалить плод бригада. Более банк рабочий неожиданно. Дружно изучить цель монета угроза металл достоинство.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 5 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Единый кпсс заявление печатать спалить плод бригада. Более банк рабочий неожиданно. Дружно изучить цель монета угроза металл достоинство.
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to dc6d4f3c-6f89-4e1e-8de4-eee597b2d5da
+INFO     BASE ASSERTIONS:base.py:32 Check that "url" equals to http://localhost:8000/static/tests/a97f63b0-c9c8-46f8-9565-2c4eb08b6754.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "filename" equals to a97f63b0-c9c8-46f8-9565-2c4eb08b6754.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:35 Check user
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 967747da-9ca0-4016-879c-448441a6fbcb
+INFO     BASE ASSERTIONS:base.py:32 Check that "email" equals to narkisgalkin@example.net
+INFO     BASE ASSERTIONS:base.py:32 Check that "first_name" equals to Фадей
+INFO     BASE ASSERTIONS:base.py:32 Check that "middle_name" equals to Сергей
+INFO     BASE ASSERTIONS:base.py:32 Check that "last_name" equals to Анисимова
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

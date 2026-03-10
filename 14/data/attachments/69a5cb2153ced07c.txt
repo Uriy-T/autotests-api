@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjQxLjg4NjM1OSIsInVzZXJfaWQiOiI3NDRlMDA5Mi1iMzg5LTQ2MGQtYjc5My1hZjBiOGMwZDA5MDgifQ.JpTujOOZBydSBQLrDXWbbz0C7VSr1p59o3RAw5vtJO8' \
+ -H 'content-length: 560' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Идея витрина школьный скрытый костер вообще банда князь.","maxScore":90,"minScore":12,"description":"Четко пробовать куча забирать о за.\nУточнить хотеть ломать вряд. Отъезд уточнить руководитель каюта эффект построить промолчать растеряться.","estimatedTime":"7 weeks","previewFileId":"52405d9c-ca03-4b53-9d1d-c3f6b5d1f5c0","createdByUserId":"744e0092-b389-460d-b793-af0b8c0d0908"}'

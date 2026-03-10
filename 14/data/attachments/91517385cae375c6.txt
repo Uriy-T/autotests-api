@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE5OjU5OjM4LjgzNDMzMSIsInVzZXJfaWQiOiJiNmU0OTJjNS0xYjUxLTRjZTItYTgwOS0wM2M5MWQzNzhjYTAifQ.CeIeI-rru34fwUn3FF4fcxypNix0ScVbIef8mTo7_Jc' \
+ -H 'content-length: 638' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Деньги провал обида рай вскинуть валюта.","maxScore":53,"minScore":25,"description":"Волк назначить порог эффект проход уронить. Ремень болото мусор о привлекать пропасть зарплата.\nЧто возбуждение вздрагивать вообще настать предоставить изба выраженный. Очередной носок развитый что.","estimatedTime":"1 weeks","previewFileId":"8226f493-c4d0-45dc-9fa7-c9105ff343a2","createdByUserId":"b6e492c5-1b51-4ce2-a809-03c91d378ca0"}'
