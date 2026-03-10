@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjQ4OjEzLjU2NTU0MyIsInVzZXJfaWQiOiI2ODYyMmZhOC0xYTMzLTQ1NWItODhiOS1hZjM2ZjBiZmI0M2QifQ.wL-NVEFpOqQan2Su0q0LhH2wKz_-5LsmS_SYp9zdrE8' \
+ -H 'content-length: 454' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Вздрогнуть намерение обида.","maxScore":96,"minScore":14,"description":"Куча изображать райком счастье изменение. Степь куча выражаться палец потянуться мусор. Процесс картинка тута о.","estimatedTime":"10 weeks","previewFileId":"961a4d78-56cf-4020-bc51-3573c3e061a0","createdByUserId":"68622fa8-1a33-455b-88b9-af36f0bfb43d"}'

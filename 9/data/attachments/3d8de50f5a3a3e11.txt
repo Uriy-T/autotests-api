@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjQ4OjExLjIxMzIxMCIsInVzZXJfaWQiOiJkNWMyZDFhNy1kMTZlLTQ5ZjYtYTlhMS04ZGM4Mjg3NjYzNzMifQ.m3qYdDCgsTddYuYwYwcCQAjW4U3Xk6MnZ-W-o_G2AaM' \
+ -H 'content-length: 559' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Мотоцикл князь выражение за число функция.","maxScore":98,"minScore":11,"description":"Слать один райком танцевать запустить покидать наступать. Смеяться порода решетка.\nНекоторый потянуться картинка. Каюта плавно добиться командующий вряд.","estimatedTime":"5 weeks","previewFileId":"aa41fba7-06c7-4018-97c1-c36ca7a06056","createdByUserId":"d5c2d1a7-d16e-49f6-a9a1-8dc828766373"}'

@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjQ4OjEyLjM5MzE1OCIsInVzZXJfaWQiOiIxYmQzMWIwOS00ZWU1LTRjZGEtODhlOS0zMWVkZTYwOWJmZjYifQ.blFTB6S4AH-b_gVeAwKWBL8IcdQc_Qcg8-fsJFfTAMo' \
+ -H 'content-length: 536' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Кольцо расстройство около дыхание стакан невозможно песенка.","maxScore":90,"minScore":5,"description":"Пробовать изба функция радость функция картинка плавно. Стакан падать медицина расстройство. Дошлый четыре покидать правый.","estimatedTime":"7 weeks","previewFileId":"5ac34f71-291a-442a-bca6-e02a763b46f5","createdByUserId":"1bd31b09-4ee5-4cda-88e9-31ede609bff6"}'

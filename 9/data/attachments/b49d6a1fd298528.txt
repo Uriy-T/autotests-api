@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/63faa9ac-254a-464e-ae5f-31901b7459f0 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjQ4OjExLjIxMzIxMCIsInVzZXJfaWQiOiJkNWMyZDFhNy1kMTZlLTQ5ZjYtYTlhMS04ZGM4Mjg3NjYzNzMifQ.m3qYdDCgsTddYuYwYwcCQAjW4U3Xk6MnZ-W-o_G2AaM' \
+ -H 'content-length: 468' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Еврейский инвалид покинуть багровый неправда.","maxScore":96,"minScore":30,"description":"Рота другой очко район пересечь следовательно падаль. Народ уронить выкинуть покидать более тута художественный виднеться. Белье сравнение факультет висеть боец.","estimatedTime":"6 weeks"}'

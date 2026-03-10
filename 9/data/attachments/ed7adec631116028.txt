@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/07121da7-babd-4cc4-b0c0-26d0eea78c46 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjQ4OjE0Ljc5MDg0OCIsInVzZXJfaWQiOiIzNmJhZmUzZi01Y2RhLTRiZTEtOTk3Zi1jZjlmODhlNzZhY2MifQ.4y8GENufNENDnjU7lfhMyYXaB-5OUCbS7ETnhT-S1lI' \
+ -H 'content-length: 574' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Достоинство холодно нож подробность освободить провинция.","maxScore":93,"minScore":24,"orderIndex":39,"description":"Поговорить функция некоторый носок картинка да отдел. Рота тревога настать шлем манера возможно вывести.\nСтроительство помимо полюбить функция. Теория умолять зарплата штаб дрогнуть налоговый боец.","estimatedTime":"5 weeks"}'
