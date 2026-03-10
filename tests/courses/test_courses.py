@@ -2,7 +2,6 @@ from http import HTTPStatus
 import pytest
 import allure
 from allure_commons.types import Severity
-
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseResponseSchema, UpdateCourseRequestSchema, \
     GetCoursesResponseSchema, GetCoursesQuerySchema, CreateCourseRequestSchema, CreateCourseResponseSchema

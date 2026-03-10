@@ -1,9 +1,7 @@
 from http import HTTPStatus
-
 import allure
 import pytest
 from allure_commons.types import Severity
-
 from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_client import ExercisesClient
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \

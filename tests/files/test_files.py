@@ -2,7 +2,6 @@ from http import HTTPStatus
 import pytest
 import allure
 from allure_commons.types import Severity
-
 from clients.errors_schema import ValidationErrorResponseSchema, InternalErrorResponseSchema
 from clients.files.files_client import FilesClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
