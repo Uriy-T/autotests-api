@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE4OjA3OjEwLjkyNjA5NyIsInVzZXJfaWQiOiI3NGYzZjRmMS02NzFlLTRkMzUtYjA2MS1mZGQzNjRhODAxYzMifQ.maL4RlMi47C9O4dyl3-R8lstvqFFH22XK35SuN3opZk' \
+ -H 'content-length: 634' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Помолчать провал волк дремать очутиться перебивать упорно.","maxScore":81,"minScore":5,"description":"Естественный неудобно мотоцикл сынок ягода карман трясти. Багровый одиннадцать указанный поставить банк сутки уточнить. Заявление куча исполнять район видимо торговля провинция.","estimatedTime":"4 weeks","previewFileId":"071fc4e7-4e6e-48b5-b219-b957fb43dcbd","createdByUserId":"74f3f4f1-671e-4d35-b061-fdd364a801c3"}'

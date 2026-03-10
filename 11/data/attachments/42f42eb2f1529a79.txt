@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE4OjA3OjEzLjk5ODg0NCIsInVzZXJfaWQiOiIwOWY2NTQwMi00NTZlLTQxN2EtYjEzMC1iODE3ZjIwYWM5NGQifQ.lzHPxm_q1DnXtNdgTrlurfiOXil9RAcOgO1KJeNcV_0' \
+ -H 'content-length: 482' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Дурацкий рабочий холодно.","maxScore":82,"minScore":1,"description":"Подземный покидать дружно механический указанный. Июнь иной изменение. Товар угол художественный провал провал промолчать четыре.","estimatedTime":"1 weeks","previewFileId":"c637e40f-d0d8-4eec-9610-7fdf1412fcfc","createdByUserId":"09f65402-456e-417a-b130-b817f20ac94d"}'
