@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjU0OjIzLjQ3MDk0NCIsInVzZXJfaWQiOiIxM2Y2YzlkMC0zMGMzLTQzY2QtYjA5OS1iNDUwNzExODI0NTAifQ.SuheRH1m4z5q_YV89efXYsDF2qeEmf8IdtPSe_6rWIY' \
+ -H 'content-length: 552' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Сустав расстегнуть факультет жить заявление.","maxScore":60,"minScore":15,"description":"Поздравлять командование радость кожа. Запустить райком основание сынок.\nВозбуждение какой виднеться тяжелый. Результат холодно оставить инфекция.","estimatedTime":"9 weeks","previewFileId":"966fa9a6-c7e8-495e-bb9a-68caec8dee84","createdByUserId":"13f6c9d0-30c3-43cd-b099-b45071182450"}'

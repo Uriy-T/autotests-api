@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/3581e538-5c31-4657-94d4-b4916c185c57 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjU0OjI0LjgzMjE1NyIsInVzZXJfaWQiOiI0NjFjZGI4Yi05MzdjLTQ4ZjMtOGI2MC1jYjc2YWRjOTQ4NTMifQ.wErbwsoN5GxsgCrJ0TgzJLnVSqdiFH_-qOj6CbhRvls' \
+ -H 'content-length: 524' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Костер промолчать вариант скрытый невозможно.","maxScore":77,"minScore":29,"orderIndex":44,"description":"Уронить правление снимать сохранять полюбить. Выраженный опасность порода увеличиваться.\nПеребивать мелькнуть угроза космос палата коммунизм. Столетие космос находить расстройство.","estimatedTime":"10 weeks"}'

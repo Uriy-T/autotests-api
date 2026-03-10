@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjU0OjIxLjUxMzIyOCIsInVzZXJfaWQiOiI4NTAzMDI4NS0zZmM5LTQ2NDItOGMxOC05OGFkNjM2YjllZmEifQ.1GsiYlP85bKqw05dCDhFGONsxWgzWKbZQVbuASU1t1k' \
+ -H 'content-length: 557' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Медицина умирать неудобно команда салон ведь.","maxScore":89,"minScore":5,"description":"Потянуться нож функция. Салон способ стакан коробка коробка выдержать.\nСпичка пятеро ботинок покидать. Правильный научить нож приходить волк дурацкий.","estimatedTime":"2 weeks","previewFileId":"0d6c4a0b-a639-45e3-9a5c-403a58a9d54b","createdByUserId":"85030285-3fc9-4642-8c18-98ad636b9efa"}'

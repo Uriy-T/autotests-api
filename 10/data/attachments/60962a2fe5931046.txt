@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjU0OjIyLjgyMzUyMSIsInVzZXJfaWQiOiI2NjdmZDkyZS1mOTU5LTQxYmYtYTgyMS1mMTUxNzRlZGFmYzQifQ.qpdd2JB-xoiiUbXwkbIyTWMAJB6Uxf3T3mFbBIVIUlA' \
+ -H 'content-length: 437' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Ярко стакан один витрина район манера.","maxScore":65,"minScore":24,"description":"Команда нажать дремать предоставить бригада. Темнеть спичка природа миф изучить рассуждение.","estimatedTime":"9 weeks","previewFileId":"6bdc779c-593e-4de2-a85a-13d3142a08ee","createdByUserId":"667fd92e-f959-41bf-a821-f15174edafc4"}'
