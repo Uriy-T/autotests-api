@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/exercises \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU3LjYzODYyNSIsInVzZXJfaWQiOiJjZTA2OTIxNi1iNjIwLTQ1Y2EtYWQ2NS0yNDgwNWU5OTI2MTkifQ.y0hExx3OsxQYkAnXRc38nMThWkkNGdGjaJ9bHoB4N_k' \
+ -H 'content-length: 522' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Тусклый карман второй голубчик.","courseId":"049bd3f3-5c39-4ca0-b480-d1b47a8e7028","maxScore":64,"minScore":8,"orderIndex":97,"description":"Домашний нож вывести приличный инфекция.\nОтметить построить лететь головной выражение. Табак что конференция рота заработать совет. Неожиданный издали уничтожение точно.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU4LjgyNTYwMCIsInVzZXJfaWQiOiIyNzE5M2QxNy00NjAxLTRlOGEtOGNlMi1iN2U1OTg5NTBhMTIifQ.trPD_DhkbF_soxxSSHoWJFLXpkBKO_E18KkMbhANZic' \
+ -H 'content-length: 577' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Космос невозможно салон крыса.","maxScore":58,"minScore":3,"description":"Вытаскивать пропадать блин серьезный ведь полоска. Ход мимо ставить близко коричневый выкинуть неправда скрытый. Второй присесть хотеть волк самостоятельно пасть предоставить.","estimatedTime":"3 weeks","previewFileId":"6bc1885a-3d04-40e1-b6be-6c22e08e2f63","createdByUserId":"27193d17-4601-4e8a-8ce2-b7e598950a12"}'

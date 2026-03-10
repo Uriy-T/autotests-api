@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU3LjYzODYyNSIsInVzZXJfaWQiOiJjZTA2OTIxNi1iNjIwLTQ1Y2EtYWQ2NS0yNDgwNWU5OTI2MTkifQ.y0hExx3OsxQYkAnXRc38nMThWkkNGdGjaJ9bHoB4N_k' \
+ -H 'content-length: 441' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Очередной назначить намерение висеть лететь вряд экзамен.","maxScore":85,"minScore":2,"description":"Головной подземный кузнец. Помимо за пасть госпожа самостоятельно головной.","estimatedTime":"5 weeks","previewFileId":"8918fe88-4740-461c-a8ae-cb6f23fb5e8a","createdByUserId":"ce069216-b620-45ca-ad65-24805e992619"}'

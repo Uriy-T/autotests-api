@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU4LjU1MjI3MiIsInVzZXJfaWQiOiIzZWI3Yzc3MC0wNGM2LTQ5NDAtODRiZS05ZTEzODk4MGE4YmUifQ.Po4Sa_iYQseeqwXm6sWuc_s8bsbdXWtXIp_zpe2QDFM' \
+ -H 'content-length: 540' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Анализ порода недостаток мучительно самостоятельно необычный жидкий.","maxScore":69,"minScore":11,"description":"Теория горький академик волк. Передо дьявол следовательно задрать четыре. Запеть тысяча поставить валюта изображать.","estimatedTime":"7 weeks","previewFileId":"5782fc3a-4a35-42ed-9422-4fa3dc1d3dd3","createdByUserId":"3eb7c770-04c6-4940-84be-9e138980a8be"}'

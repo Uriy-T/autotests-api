@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU2LjQ0NjkyOCIsInVzZXJfaWQiOiJmZjQ5N2FhYy1kMzZlLTQ4NzYtOTU5Zi01NTg5ZDM1ODNiYTUifQ._V11rTRCOTdXu2xmyt-GC1dAGuvV9aSEa2BX61Ws4eg' \
+ -H 'content-length: 647' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Недостаток горький самостоятельно бетонный.","maxScore":74,"minScore":9,"description":"Прежде легко падать скользить полоска. Еврейский следовательно лететь кпсс миф вообще.\nЗасунуть выкинуть сходить дурацкий уточнить устройство. Коммунизм возбуждение военный пламя коллектив покидать.","estimatedTime":"9 weeks","previewFileId":"8cfe00b4-a8f4-45c5-8c9d-0a4c982bfe6f","createdByUserId":"ff497aac-d36e-4876-959f-5589d3583ba5"}'

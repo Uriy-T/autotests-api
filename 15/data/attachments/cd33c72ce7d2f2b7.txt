@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU1LjAyOTcyNyIsInVzZXJfaWQiOiJlOWZjYWE1NC0wMTY3LTRjMzQtYTc0Ny04NWUzNTU2YTM2MWYifQ.Tn0HYJJrWifFOTArI2ZWXkHksfu5TMmUtrSaTbgBbDI' \
+ -H 'content-length: 463' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Равнодушный бегать при палка.","maxScore":83,"minScore":24,"description":"Деловой свежий пространство мелькнуть художественный налево. Миф мягкий падаль. Сынок основание школьный присесть.","estimatedTime":"10 weeks","previewFileId":"f5b2016b-23ab-4279-99c4-2590de30307f","createdByUserId":"e9fcaa54-0167-4c34-a747-85e3556a361f"}'

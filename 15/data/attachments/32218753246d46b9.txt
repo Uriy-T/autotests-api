@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU5Ljc1NDU4NiIsInVzZXJfaWQiOiJkYTUyMDNlNS0wNzk2LTQyZDItYTY1Zi0yZmY0Mzg0OGFjZTkifQ.B3ahSwCxROY0NNeE2kSLetV3InRqK9cBqr-z9lrVjjE' \
+ -H 'content-length: 677' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Руководитель настать плавно перебивать коричневый выдержать.","maxScore":85,"minScore":8,"description":"Манера очко исследование расстегнуть единый. Палата способ доставать четыре вперед художественный.\nПлод заведение другой монета услать протягивать. Редактор забирать цепочка ленинград гулять совет.","estimatedTime":"9 weeks","previewFileId":"6ddbfeb9-4271-49e5-8cb1-2e7584cc83d8","createdByUserId":"da5203e5-0796-42d2-a65f-2ff43848ace9"}'

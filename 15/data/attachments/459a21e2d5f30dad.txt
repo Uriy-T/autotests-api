@@ -1,0 +1,33 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/courses?userId=e9fcaa54-0167-4c34-a747-85e3556a361f
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses?userId=e9fcaa54-0167-4c34-a747-85e3556a361f
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:58 Check get courses response
+INFO     BASE ASSERTIONS:base.py:66 Check that length of courses equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:36 Check course
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to c92af7ed-621e-432e-bcda-5d85c476e8cc
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Равнодушный бегать при палка.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 83
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 24
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Деловой свежий пространство мелькнуть художественный налево. Миф мягкий падаль. Сынок основание школьный присесть.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 10 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Деловой свежий пространство мелькнуть художественный налево. Миф мягкий падаль. Сынок основание школьный присесть.
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to f5b2016b-23ab-4279-99c4-2590de30307f
+INFO     BASE ASSERTIONS:base.py:32 Check that "url" equals to http://localhost:8000/static/tests/5742efe2-4a83-4370-8ec7-30acde1ee173.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "filename" equals to 5742efe2-4a83-4370-8ec7-30acde1ee173.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:35 Check user
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to e9fcaa54-0167-4c34-a747-85e3556a361f
+INFO     BASE ASSERTIONS:base.py:32 Check that "email" equals to bobilevjuvenali@example.org
+INFO     BASE ASSERTIONS:base.py:32 Check that "first_name" equals to Данила
+INFO     BASE ASSERTIONS:base.py:32 Check that "middle_name" equals to Назар
+INFO     BASE ASSERTIONS:base.py:32 Check that "last_name" equals to Абрамов
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

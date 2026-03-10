@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU3LjM2NjA4OSIsInVzZXJfaWQiOiI1MTlhZmFjYS1hNmRhLTQyYWQtODViYS1lNjcyOGZhMDZkMDMifQ.eVhmq0hY7Szmr-REHgVzf6bjgE8NF2y1A2IVbXlCFRQ' \
+ -H 'content-length: 369' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Очередной горький ход цвет.","maxScore":90,"minScore":27,"description":"Демократия вытаскивать голубчик. Банк что рот еврейский сравнение.","estimatedTime":"10 weeks","previewFileId":"0349efc8-0a72-494a-a1e4-165a87b0bfbb","createdByUserId":"519afaca-a6da-42ad-85ba-e6728fa06d03"}'

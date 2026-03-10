@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU2LjQ0NjkyOCIsInVzZXJfaWQiOiJmZjQ5N2FhYy1kMzZlLTQ4NzYtOTU5Zi01NTg5ZDM1ODNiYTUifQ._V11rTRCOTdXu2xmyt-GC1dAGuvV9aSEa2BX61Ws4eg' \
+ -H 'content-length: 626' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Затянуться скользить головка граница.","maxScore":98,"minScore":5,"description":"Точно изучить близко возмутиться. Функция прежде сверкать дрогнуть потом смеяться кольцо. Сынок мальчишка радость пятеро кпсс ныне палка. Кпсс столетие бровь коричневый командование монета бровь.","estimatedTime":"1 weeks","previewFileId":"8cfe00b4-a8f4-45c5-8c9d-0a4c982bfe6f","createdByUserId":"ff497aac-d36e-4876-959f-5589d3583ba5"}'

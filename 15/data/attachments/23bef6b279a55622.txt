@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/e72ad384-a944-4b26-9055-574c901a2bc9 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDIwOjExOjU2LjE3Mjg4OCIsInVzZXJfaWQiOiI1Mjg1MWZkMy0wNjNlLTRiYjUtYTQ2ZC03ZmE3NTg4YTc5NDEifQ.PDfqdpd_8irCFSv_RuS8wvPjpHcrnknL-zLQ7AMVUrw' \
+ -H 'content-length: 421' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Руководитель металл подробность важный.","maxScore":97,"minScore":4,"description":"Интернет прошептать смеяться дружно художественный отражение труп. Достоинство вытаскивать страсть зима возникновение неправда пространство.","estimatedTime":"5 weeks"}'
