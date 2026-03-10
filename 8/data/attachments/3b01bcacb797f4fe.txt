@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjI3OjIyLjM2Mzg0NiIsInVzZXJfaWQiOiI3NWU4ZDViYy05MTI1LTQyYmQtYTRjZi05OThiNzA3MmMyMWIifQ._WDeFU9v0Qz7eZHzJPVcjScbayyOqtxD8MTGB22FERo' \
+ -H 'content-length: 607' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Дурацкий некоторый жить смелый гулять освободить дрогнуть.","maxScore":53,"minScore":1,"description":"Умирать появление сынок идея выдержать тревога. Желание конструкция провинция выгнать танцевать ремень оставить. Спалить болото штаб триста затянуться ученый июнь.","estimatedTime":"2 weeks","previewFileId":"b8783ace-a7ea-405b-bce0-686bac1f7692","createdByUserId":"75e8d5bc-9125-42bd-a4cf-998b7072c21b"}'

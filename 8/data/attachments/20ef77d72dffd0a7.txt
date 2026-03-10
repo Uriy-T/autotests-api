@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjI3OjE4LjczOTg3MyIsInVzZXJfaWQiOiI5NGE5M2Q5MS1iOTYzLTRlY2MtOGE2Zi05YzA0YmFlOGM5YmYifQ.xw8QhIy_IET8VLNPtZbejDtq1paBx8wMW4txTLXPBwg' \
+ -H 'content-length: 423' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Сходить провинция а запретить сынок горький.","maxScore":92,"minScore":16,"description":"Важный написать грудь сомнительный холодно. Интернет затянуться белье угодный.","estimatedTime":"4 weeks","previewFileId":"d87d94b2-e221-44c3-9b07-79af605dd5bb","createdByUserId":"94a93d91-b963-4ecc-8a6f-9c04bae8c9bf"}'

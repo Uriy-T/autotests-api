@@ -1,0 +1,10 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/files \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjI3OjIwLjU1NTEzNyIsInVzZXJfaWQiOiIxYjU5YmJlZC00ZTVkLTQwM2ItYmRmNC1hODhjMzJjYTc2ZDUifQ.CNIynscfmuwimqPEOWJDMCLhHnTes0F27eQmwe-dzJw' \
+ -H 'content-length: 267691' \
+ -H 'content-type: multipart/form-data; boundary=40ce491bee21f65b6c4ab6dce9a878f1'

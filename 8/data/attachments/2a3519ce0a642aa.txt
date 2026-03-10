@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEwVDE3OjI3OjIwLjU1NTEzNyIsInVzZXJfaWQiOiIxYjU5YmJlZC00ZTVkLTQwM2ItYmRmNC1hODhjMzJjYTc2ZDUifQ.CNIynscfmuwimqPEOWJDMCLhHnTes0F27eQmwe-dzJw' \
+ -H 'content-length: 595' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Мелочь построить запретить мучительно вывести сопровождаться.","maxScore":71,"minScore":10,"description":"Школьный спорт вперед висеть пятеро выкинуть выгнать. Следовательно сынок услать актриса костер. Понятный четко уничтожение выражение вздрогнуть спасть.","estimatedTime":"7 weeks","previewFileId":"4374453c-4722-41b8-933c-1ae2f5ebc1ac","createdByUserId":"1b59bbed-4e5d-403b-bdf4-a88c32ca76d5"}'
