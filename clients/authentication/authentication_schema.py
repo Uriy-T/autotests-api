@@ -30,6 +30,4 @@ class RefreshRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление токена
     """
-    refresh_token: str = Field(alias='refreshToken', default_factory=test_data_gen.sentence())
-
-print(LoginRequestSchema())
+    refresh_token: str = Field(alias='refreshToken', default_factory=test_data_gen.sentence)
