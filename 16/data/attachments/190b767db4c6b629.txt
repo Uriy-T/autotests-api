@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE2Ljk4NjYyNCIsInVzZXJfaWQiOiJkOGRjOGI1YS02NzhjLTRiOTAtYWJjNy00YWQyOTVmMzliZWIifQ.A4zHGl8303xC_w2RB9gqeJsGDYJaKC67pLYhov6dQtk' \
+ -H 'content-length: 681' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Подробность предоставить инструкция ставить устройство точно салон.","maxScore":57,"minScore":28,"description":"Беспомощный художественный военный разуметься постоянный торопливый правление. Сынок прежний расстройство прежний вздрагивать изменение одиннадцать. Картинка угодный неудобно коллектив очко.","estimatedTime":"6 weeks","previewFileId":"99f4dca7-206e-4cda-9a81-3088f47b2ea4","createdByUserId":"d8dc8b5a-678c-4b90-abc7-4ad295f39beb"}'

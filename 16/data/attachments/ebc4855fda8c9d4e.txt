@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/exercises \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE4LjI0NDc5OSIsInVzZXJfaWQiOiI0NDE0ZjgyYi01MjkwLTQzODgtODVhMy1hNmU5NTUyMzRmNWUifQ.vNiJ8MKeehRopjTt7gX8oCgZNI8J75UkTlLwr90BQ88' \
+ -H 'content-length: 486' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Бак выражение белье рот приятель.","courseId":"eb6673c5-746d-4c49-9d1c-4bbcc0ea3d34","maxScore":53,"minScore":19,"orderIndex":41,"description":"Задержать коробка изредка спалить костер сынок. Забирать налево изображать изредка. Очередной выраженный умолять механический разнообразный плавно.","estimatedTime":"3 weeks"}'

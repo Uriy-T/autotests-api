@@ -1,0 +1,35 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/courses?userId=c688f3a5-352b-44c7-8c6c-927b98354440
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses?userId=c688f3a5-352b-44c7-8c6c-927b98354440
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:58 Check get courses response
+INFO     BASE ASSERTIONS:base.py:66 Check that length of courses equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:36 Check course
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 8e9236fb-31aa-46d8-a250-6c66015f76cf
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Подробность дорогой четыре приятель.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 90
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 17
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Наслаждение беспомощный карандаш налоговый выраженный за идея. Карман деньги левый избегать карандаш плод.
+Покидать забирать умирать интернет июнь.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 10 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Наслаждение беспомощный карандаш налоговый выраженный за идея. Карман деньги левый избегать карандаш плод.
+Покидать забирать умирать интернет июнь.
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 3031e047-fd32-46bb-87a5-03cb1bde4f54
+INFO     BASE ASSERTIONS:base.py:32 Check that "url" equals to http://localhost:8000/static/tests/7d137c73-d20c-47fd-b271-b42b47c49075.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "filename" equals to 7d137c73-d20c-47fd-b271-b42b47c49075.png
+INFO     BASE ASSERTIONS:base.py:32 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:35 Check user
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to c688f3a5-352b-44c7-8c6c-927b98354440
+INFO     BASE ASSERTIONS:base.py:32 Check that "email" equals to strelkovadarja@example.net
+INFO     BASE ASSERTIONS:base.py:32 Check that "first_name" equals to Елизар
+INFO     BASE ASSERTIONS:base.py:32 Check that "middle_name" equals to Жанна
+INFO     BASE ASSERTIONS:base.py:32 Check that "last_name" equals to Логинов
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

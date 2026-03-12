@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE3LjY0OTc2MSIsInVzZXJfaWQiOiIwYjAzMWU5Mi1mZTI0LTQ0ZTktYWFkMy05NzIxZWQxYTQ3N2QifQ.9Sky01P-5JdGCW8yUs-31RZhR8k5WC4uDijxG8MRL_Y' \
+ -H 'content-length: 590' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Деньги головка бегать.","maxScore":91,"minScore":13,"description":"Поставить добиться настать разнообразный встать картинка.\nОчутиться правильный очередной выгнать процесс подземный заработать.\nПостоянный означать реклама шлем. Товар кпсс отъезд интернет.","estimatedTime":"1 weeks","previewFileId":"78475b54-9691-4b8c-8873-c553717dfd55","createdByUserId":"0b031e92-fe24-44e9-aad3-9721ed1a477d"}'

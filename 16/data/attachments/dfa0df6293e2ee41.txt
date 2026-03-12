@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make PATCH request to http://localhost:8000/api/v1/courses/7b8a36c1-8902-4327-b764-b54974b2fb60
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses/7b8a36c1-8902-4327-b764-b54974b2fb60
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:20 Check update course response
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Металл заработать обида второй тусклый адвокат секунда армейский.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 67
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 2
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Дружно жить гулять жидкий тяжелый прошептать. Научить тревога тяжелый умолять выражение изучить салон.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 6 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

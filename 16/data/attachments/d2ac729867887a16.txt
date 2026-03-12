@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE2LjM5OTA1MSIsInVzZXJfaWQiOiIwMzVkNjVlYi0xOGQ3LTRhYzItOTljNS0zZTI4M2ZlODBiMDUifQ.E7JFc74KvxL9dZ6xkb7uRL4db2nbYtWo5x5rctrGjcg' \
+ -H 'content-length: 528' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Изменение бригада посидеть.","maxScore":58,"minScore":19,"description":"Тяжелый потянуться ответить порода низкий спичка. Поймать конференция выражение крыса армейский помимо. Спалить военный единый роса пропаганда прежний.","estimatedTime":"2 weeks","previewFileId":"fca9c1ea-f46f-4513-8ca5-4e33a1b38234","createdByUserId":"035d65eb-18d7-4ac2-99c5-3e283fe80b05"}'

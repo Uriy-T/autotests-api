@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/484bef45-acfa-4c67-9b6d-ba6b58b7e2ce \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE4LjI0NDc5OSIsInVzZXJfaWQiOiI0NDE0ZjgyYi01MjkwLTQzODgtODVhMy1hNmU5NTUyMzRmNWUifQ.vNiJ8MKeehRopjTt7gX8oCgZNI8J75UkTlLwr90BQ88' \
+ -H 'content-length: 434' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Услать решение командование советовать.","maxScore":57,"minScore":8,"orderIndex":76,"description":"Тута вариант провал полностью решение смеяться четко. Более лететь полностью процесс светило изредка. Угодный вытаскивать мелочь мягкий ярко.","estimatedTime":"3 weeks"}'

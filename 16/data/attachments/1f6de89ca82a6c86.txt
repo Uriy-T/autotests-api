@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE5LjQ4NjUzOSIsInVzZXJfaWQiOiI5N2ZmMTEyNy03NGFhLTQyZTUtOWVkZS1hNDA2YjliN2U3YTYifQ.BGXRWnTzeqa_-xA76AhucJWdqqsbLzloVB32WfugtyU' \
+ -H 'content-length: 546' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Опасность необычный избегать райком покинуть сверкающий полюбить.","maxScore":84,"minScore":22,"description":"Непривычный коричневый одиннадцать спалить еврейский а поставить. Задержать успокоиться зима исполнять светило правление.","estimatedTime":"5 weeks","previewFileId":"79f87545-f6cb-428c-8e93-7312fe9c272f","createdByUserId":"97ff1127-74aa-42e5-9ede-a406b9b7e7a6"}'

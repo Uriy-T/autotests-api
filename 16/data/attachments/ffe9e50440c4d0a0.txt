@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/7b8a36c1-8902-4327-b764-b54974b2fb60 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE2LjM5OTA1MSIsInVzZXJfaWQiOiIwMzVkNjVlYi0xOGQ3LTRhYzItOTljNS0zZTI4M2ZlODBiMDUifQ.E7JFc74KvxL9dZ6xkb7uRL4db2nbYtWo5x5rctrGjcg' \
+ -H 'content-length: 394' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Металл заработать обида второй тусклый адвокат секунда армейский.","maxScore":67,"minScore":2,"description":"Дружно жить гулять жидкий тяжелый прошептать. Научить тревога тяжелый умолять выражение изучить салон.","estimatedTime":"6 weeks"}'

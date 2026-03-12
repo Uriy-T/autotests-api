@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/exercises \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE4Ljg5MDgxMiIsInVzZXJfaWQiOiIwNWZhOTY1YS0xNTU0LTRjODktOGM2MC03NGJlMDExZGM3NGYifQ.5qUx0UTZYwoVzZbbNAaC7zBLv14dbbGW0myJqO14P1E' \
+ -H 'content-length: 476' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Сохранять растеряться исследование строительство непривычный витрина.","courseId":"5639c200-2b88-4917-be4f-2760fc2bed14","maxScore":50,"minScore":17,"orderIndex":39,"description":"Упорно выражение район девка горький лиловый. Расстройство триста налево написать армейский командующий.","estimatedTime":"5 weeks"}'

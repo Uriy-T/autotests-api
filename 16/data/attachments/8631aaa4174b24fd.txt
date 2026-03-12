@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE4Ljg5MDgxMiIsInVzZXJfaWQiOiIwNWZhOTY1YS0xNTU0LTRjODktOGM2MC03NGJlMDExZGM3NGYifQ.5qUx0UTZYwoVzZbbNAaC7zBLv14dbbGW0myJqO14P1E' \
+ -H 'content-length: 647' \
+ -H 'content-type: application/json' \
+ -d '{"title":"При достоинство пятеро палец тревога пробовать видимо.","maxScore":78,"minScore":3,"description":"Рис опасность изба сынок. Разводить призыв приходить бабочка еврейский коричневый. Ремень дальний еврейский металл один. Возбуждение постоянный металл изучить сравнение встать прежде князь.","estimatedTime":"3 weeks","previewFileId":"40cb1db4-2de5-4352-b84f-8f04b149da7e","createdByUserId":"05fa965a-1554-4c89-8c60-74be011dc74f"}'

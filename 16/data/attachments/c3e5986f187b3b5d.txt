@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE1LjQ3NDE3MCIsInVzZXJfaWQiOiJjNjg4ZjNhNS0zNTJiLTQ0YzctOGM2Yy05MjdiOTgzNTQ0NDAifQ.YXdmAtyYpj2yNL_Yv_YYwSBU0qGxl80fUGt8AXNITG4' \
+ -H 'content-length: 539' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Подробность дорогой четыре приятель.","maxScore":90,"minScore":17,"description":"Наслаждение беспомощный карандаш налоговый выраженный за идея. Карман деньги левый избегать карандаш плод.\nПокидать забирать умирать интернет июнь.","estimatedTime":"10 weeks","previewFileId":"3031e047-fd32-46bb-87a5-03cb1bde4f54","createdByUserId":"c688f3a5-352b-44c7-8c6c-927b98354440"}'

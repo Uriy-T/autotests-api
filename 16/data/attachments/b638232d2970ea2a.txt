@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjIwLjE0NzYzNyIsInVzZXJfaWQiOiI4ZDA2NmU3NC1kNWVmLTRhYzctOWNjNS00Mzc5ZmNkMDllZjEifQ.AmqGda313AZlKqEvXTUEXnYIwjQW2U7XIW39aYdASVQ' \
+ -H 'content-length: 386' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Танцевать мотоцикл самостоятельно пастух.","maxScore":60,"minScore":19,"description":"Да поколение сверкать. Бок вывести уничтожение функция обида.","estimatedTime":"5 weeks","previewFileId":"c50f26e3-0471-469c-a525-db4c8789b33a","createdByUserId":"8d066e74-d5ef-4ac7-9cc5-4379fcd09ef1"}'

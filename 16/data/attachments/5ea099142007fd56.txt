@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDA5OjM3OjE2Ljk4NjYyNCIsInVzZXJfaWQiOiJkOGRjOGI1YS02NzhjLTRiOTAtYWJjNy00YWQyOTVmMzliZWIifQ.A4zHGl8303xC_w2RB9gqeJsGDYJaKC67pLYhov6dQtk' \
+ -H 'content-length: 635' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Армейский теория обида даль добиться болото господь.","maxScore":64,"minScore":14,"description":"Факультет промолчать бок смертельный. Невыносимый основание помолчать ныне разуметься способ пропаганда.\nТысяча смелый школьный решетка сомнительный. Четко факультет пятеро карман аж.","estimatedTime":"5 weeks","previewFileId":"99f4dca7-206e-4cda-9a81-3088f47b2ea4","createdByUserId":"d8dc8b5a-678c-4b90-abc7-4ad295f39beb"}'
