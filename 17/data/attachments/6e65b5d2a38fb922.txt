@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/eaf02970-ee6d-4cfb-a42a-a9f4bcf20e15 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU4LjM0MjU1OSIsInVzZXJfaWQiOiIwMTllMmU0OS0xOWE1LTRjNTAtYjYzOC1mNTg5ZmFmMDM5YmUifQ.Nfk1Q-4QBEzwwuyXVO8Z_EdbhlcKLxpfrJF2GbpU-hc' \
+ -H 'content-length: 502' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Нож сынок сохранять порядок запеть.","maxScore":86,"minScore":4,"description":"Головной теория что вывести возникновение что бак бетонный. Единый теория означать банда около прощение сынок. Важный ломать приятель правление увеличиваться умирать прошептать сомнительный.","estimatedTime":"1 weeks"}'

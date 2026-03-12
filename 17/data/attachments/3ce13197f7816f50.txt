@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI2OjAwLjcyODUzMSIsInVzZXJfaWQiOiI0NDlhNGU2Yy02NTBhLTQwMWMtYjIyZC04NTliZGVkNzUzMjMifQ.z-YU6Rnp3_TXcdXov1_VuA-gRbQVn0vOorjVYiPitQk' \
+ -H 'content-length: 444' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Пасть торопливый намерение грустный радость присесть.","maxScore":62,"minScore":28,"description":"Отражение сходить дьявол деньги назначить бок материя. Еврейский зарплата зачем.","estimatedTime":"8 weeks","previewFileId":"c44ef6ac-0016-4ded-9d54-ef76eef46363","createdByUserId":"449a4e6c-650a-401c-b22d-859bded75323"}'

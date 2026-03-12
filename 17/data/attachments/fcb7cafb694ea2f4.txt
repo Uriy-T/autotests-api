@@ -1,0 +1,10 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/users \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'content-length: 144' \
+ -H 'content-type: application/json' \
+ -d '{"email":"mstislav_32@mail.ru","password":"ir5Bnc#x!7","lastName":"Бирюков","firstName":"Лаврентий","middleName":"Лазарь"}'

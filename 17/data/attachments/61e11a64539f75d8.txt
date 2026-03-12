@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU5LjgxNjgyOCIsInVzZXJfaWQiOiJhNjZkZmY5Ny1iNzU5LTQ2ZmItYjc3ZC05ZDMxMDBkNjMxMjMifQ.ktK-QqILtdgw3acFTVdpS860n8DXus_DG6hZRBifb3A' \
+ -H 'content-length: 619' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Издали солнце пропасть ремень.","maxScore":59,"minScore":8,"description":"Построить дремать спешить космос привлекать уточнить. Оставить коммунизм заплакать горький ложиться более.\nТяжелый степь ремень школьный набор. Налоговый мера уничтожение порода следовательно плод.","estimatedTime":"4 weeks","previewFileId":"ae866ee3-4c91-4eaf-ba90-95c49d0272e7","createdByUserId":"a66dff97-b759-46fb-b77d-9d3100d63123"}'

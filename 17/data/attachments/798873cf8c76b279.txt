@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU3LjIwMzQ5MyIsInVzZXJfaWQiOiI0OWU5Y2FmYi02ZmY5LTRmZjktYTIxNy03YjFlYzcyOTVhZTgifQ.0WF9g8upn_usLoi-Yag0afxhg4J4PPpm05bn99O4oAc' \
+ -H 'content-length: 452' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Командующий результат запустить товар пропадать постоянный.","maxScore":79,"minScore":25,"description":"Другой школьный успокоиться. Оставить дыхание материя терапия самостоятельно.","estimatedTime":"6 weeks","previewFileId":"cf0e9f56-408e-4c8a-b858-f65e6798c37f","createdByUserId":"49e9cafb-6ff9-4ff9-a217-7b1ec7295ae8"}'

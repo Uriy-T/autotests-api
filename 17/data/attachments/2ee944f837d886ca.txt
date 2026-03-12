@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU4LjM0MjU1OSIsInVzZXJfaWQiOiIwMTllMmU0OS0xOWE1LTRjNTAtYjYzOC1mNTg5ZmFmMDM5YmUifQ.Nfk1Q-4QBEzwwuyXVO8Z_EdbhlcKLxpfrJF2GbpU-hc' \
+ -H 'content-length: 480' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Важный ставить порядок оставить.","maxScore":58,"minScore":10,"description":"Присесть песенка госпожа передо боец спалить изображать. Бок поздравлять холодно пространство плясать космос перебивать.","estimatedTime":"2 weeks","previewFileId":"286a997b-0027-4bec-8441-2a4bcc0d421c","createdByUserId":"019e2e49-19a5-4c50-b638-f589faf039be"}'

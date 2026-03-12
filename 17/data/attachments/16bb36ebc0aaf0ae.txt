@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises?courseId=a0c8dafd-4eed-4058-80ca-a4ba301a6a41
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises?courseId=a0c8dafd-4eed-4058-80ca-a4ba301a6a41
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Check get exercises list
+INFO     BASE ASSERTIONS:base.py:66 Check that length of exercises equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 75eb4d37-f867-42bc-9c64-64daef1b4620
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Аж смелый намерение миг солнце шлем вздрагивать встать.
+INFO     BASE ASSERTIONS:base.py:32 Check that "course_id" equals to a0c8dafd-4eed-4058-80ca-a4ba301a6a41
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 80
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 9
+INFO     BASE ASSERTIONS:base.py:32 Check that "order_index" equals to 56
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Пламя выразить выкинуть собеседник изображать отъезд. Отдел ручей разнообразный.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 7 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

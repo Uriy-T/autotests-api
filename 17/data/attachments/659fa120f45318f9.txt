@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU4LjYxNTM5MCIsInVzZXJfaWQiOiJkZjJhYjYxNy0zMTA5LTQ4NGQtYWQ1NS1hNTc4YTIyMzQ1YjYifQ.lTV8e7b4T7OpN3-yW79YWzYwfimW7FtNBs7mDgDpcjQ' \
+ -H 'content-length: 501' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Затянуться порядок факультет миг.","maxScore":79,"minScore":12,"description":"Шлем посвятить ночь висеть означать головной процесс. Задержать а палец порт прошептать увеличиваться. Виднеться монета недостаток.","estimatedTime":"3 weeks","previewFileId":"3174ba78-64bb-400a-8e9d-507071c409c5","createdByUserId":"df2ab617-3109-484d-ad55-a578a22345b6"}'

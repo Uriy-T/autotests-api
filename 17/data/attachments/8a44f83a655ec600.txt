@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises/11eb2998-87d9-4eb4-ae39-861e470ac123
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises/11eb2998-87d9-4eb4-ae39-861e470ac123
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:60 Check get exercise
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to 11eb2998-87d9-4eb4-ae39-861e470ac123
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Четыре прелесть рота хозяйка вариант даль отражение.
+INFO     BASE ASSERTIONS:base.py:32 Check that "course_id" equals to b25013df-c85b-4439-b20a-2e1c2c4378c9
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 93
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 5
+INFO     BASE ASSERTIONS:base.py:32 Check that "order_index" equals to 76
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Торговля какой падать. Коллектив пространство тюрьма смертельный развитый деловой возбуждение.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 2 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

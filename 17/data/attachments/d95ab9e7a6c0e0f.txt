@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTEyVDE1OjI1OjU5LjU0MjkxOSIsInVzZXJfaWQiOiI3M2QwNDUwYi00YzBmLTQyNjgtOTIwMy1hNWJlYTBlMzVkZDUifQ.sjaMhU3V_xhWYxMRI2oug91IVqwOhfy-b6GYzpHK02c' \
+ -H 'content-length: 419' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Тута сынок поколение более понятный выраженный.","maxScore":100,"minScore":30,"description":"Дремать растеряться что скрытый. Цепочка пересечь невыносимый поставить.","estimatedTime":"7 weeks","previewFileId":"5b173f1d-26e9-4477-8326-a32f6e9f3fa5","createdByUserId":"73d0450b-4c0f-4268-9203-a5bea0e35dd5"}'

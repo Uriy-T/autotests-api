@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:74 Check create course response
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Затянуться порядок факультет миг.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 79
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 12
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Шлем посвятить ночь висеть означать головной процесс. Задержать а палец порт прошептать увеличиваться. Виднеться монета недостаток.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 3 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Шлем посвятить ночь висеть означать головной процесс. Задержать а палец порт прошептать увеличиваться. Виднеться монета недостаток.
+INFO     BASE ASSERTIONS:base.py:32 Check that "preview_file_id" equals to 3174ba78-64bb-400a-8e9d-507071c409c5
+INFO     BASE ASSERTIONS:base.py:32 Check that "created_by_user_id" equals to df2ab617-3109-484d-ad55-a578a22345b6
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

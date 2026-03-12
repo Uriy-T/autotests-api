@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make PATCH request to http://localhost:8000/api/v1/courses/eaf02970-ee6d-4cfb-a42a-a9f4bcf20e15
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses/eaf02970-ee6d-4cfb-a42a-a9f4bcf20e15
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:20 Check update course response
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Нож сынок сохранять порядок запеть.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 86
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 4
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Головной теория что вывести возникновение что бак бетонный. Единый теория означать банда около прощение сынок. Важный ломать приятель правление увеличиваться умирать прошептать сомнительный.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 1 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema
