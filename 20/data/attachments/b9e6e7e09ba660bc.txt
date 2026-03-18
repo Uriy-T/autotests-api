@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE3LjcxODE4MiIsInVzZXJfaWQiOiIzY2ZmMjA1My03Y2MzLTQwYzMtYTA4Zi1mNmVjYmE4YzJiOTYifQ.TvGYBZ839p6cxJOFcpc5fSxEwIdFAW_oXph5eFXFC2A' \
+ -H 'content-length: 376' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Провал металл похороны.","maxScore":81,"minScore":28,"description":"Подробность забирать пересечь бегать палец. Задержать ночь прежний вперед.","estimatedTime":"8 weeks","previewFileId":"442463b1-cd1e-415d-abae-01f2b30fd7d7","createdByUserId":"3cff2053-7cc3-40c3-a08f-f6ecba8c2b96"}'

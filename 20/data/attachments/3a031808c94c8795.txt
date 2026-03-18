@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE4LjkxMTQ5OCIsInVzZXJfaWQiOiJjYzRkZTI5NC1lNDA1LTRhZjUtYTAyYy0xZjhjOTQ3MGZlNWIifQ.uQjemtpBXSod3D45C2jEJVNcMMRNeXcKkgsi5fDnJVo' \
+ -H 'content-length: 558' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Возбуждение вздрогнуть около волк неправда иной.","maxScore":97,"minScore":3,"description":"Костер торопливый порт сустав слишком. Спорт помолчать назначить снимать естественный.\nКостер граница неожиданный ручей банк механический прежний.","estimatedTime":"9 weeks","previewFileId":"459573c8-b69f-41f3-b4c2-c80bf22819e1","createdByUserId":"cc4de294-e405-4af5-a02c-1f8c9470fe5b"}'

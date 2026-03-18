@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE2LjMwNTM5NCIsInVzZXJfaWQiOiJkZTI5OGUzOC00MGNiLTQwNDktODVmNS1mN2I4ZDgwNzI4M2YifQ.Cm4iT5UkIcIoAiHhnAiiHrTa42oPWNWzRJkXsnvL0qk' \
+ -H 'content-length: 535' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Человечек порода хозяйка счастье коричневый госпожа выражаться пол.","maxScore":50,"minScore":20,"description":"Коричневый реклама собеседник. Торопливый пространство тысяча предоставить разводить. Адвокат рай носок человечек.","estimatedTime":"2 weeks","previewFileId":"271981c3-ea6e-4b9f-bb2f-1fe4ebc043c2","createdByUserId":"de298e38-40cb-4049-85f5-f7b8d807283f"}'

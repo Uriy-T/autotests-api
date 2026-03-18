@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/dca7dea1-8cb9-4786-90f8-0681f0f5bf0d \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE3LjQ0NTM3OSIsInVzZXJfaWQiOiI4NWU5NjQzMS03MTJjLTQ2NWMtOGI5Ni1jM2MzZTE1YzBhMGMifQ.tCCTxl2lzt1e5w21nMAIM-nzHjm2ODH46euUpzvFg34' \
+ -H 'content-length: 526' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Решение команда сопровождаться приятель.","maxScore":91,"minScore":15,"description":"Да пересечь равнодушный покидать применяться жидкий тяжелый. Набор боец угроза другой грудь заплакать вскинуть. Упор поколение правление лететь. Бегать серьезный миг монета запеть командир витрина.","estimatedTime":"10 weeks"}'

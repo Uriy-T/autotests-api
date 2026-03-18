@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE4LjYzODYxNSIsInVzZXJfaWQiOiI5N2NkYzQ2YS04MzcxLTQxOGEtOWU1OC1iODM5NjNjNDdmMGIifQ.eFEumiu1MAGdyUgxLP6Ovl6y9mf_dyXEaBp51Mr7QaM' \
+ -H 'content-length: 490' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Конструкция падаль стакан мимо.","maxScore":82,"minScore":17,"description":"Дурацкий холодно затянуться интеллектуальный устройство. Уничтожение при налево вчера научить набор. Грудь сынок точно холодно.","estimatedTime":"6 weeks","previewFileId":"d055b8dd-846e-4dd8-9e19-7b0fbbe728ae","createdByUserId":"97cdc46a-8371-418a-9e58-b83963c47f0b"}'

@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/exercises \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE4LjYzODYxNSIsInVzZXJfaWQiOiI5N2NkYzQ2YS04MzcxLTQxOGEtOWU1OC1iODM5NjNjNDdmMGIifQ.eFEumiu1MAGdyUgxLP6Ovl6y9mf_dyXEaBp51Mr7QaM' \
+ -H 'content-length: 498' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Терапия покидать потрясти инструкция.","courseId":"3832bb3e-d299-442a-b73a-122279e4058d","maxScore":90,"minScore":3,"orderIndex":96,"description":"Умолять головка миг спалить палец труп. Подземный процесс картинка сверкающий заложить совет поколение доставать. Направо прежде оборот через тяжелый.","estimatedTime":"10 weeks"}'

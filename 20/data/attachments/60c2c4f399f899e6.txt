@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/c3164043-2be3-4c73-b3cf-517b4cdb7f97 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE4LjkxMTQ5OCIsInVzZXJfaWQiOiJjYzRkZTI5NC1lNDA1LTRhZjUtYTAyYy0xZjhjOTQ3MGZlNWIifQ.uQjemtpBXSod3D45C2jEJVNcMMRNeXcKkgsi5fDnJVo' \
+ -H 'content-length: 469' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Команда конференция издали неудобно.","maxScore":54,"minScore":17,"orderIndex":94,"description":"Следовательно горький исследование добиться направо. Инструкция полюбить команда сомнительный понятный. Перебивать дурацкий пространство достоинство палец шлем.","estimatedTime":"1 weeks"}'

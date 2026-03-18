@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjE5LjgyODIwOCIsInVzZXJfaWQiOiJiOWM3OTMzZC0zY2Q0LTQwMWEtOGNlYy04NmU5ZGY4NjU1YWMifQ.OrIRARb7oKmdnG3T44IZkYayB9hW6JsnPDJN0f3K3ao' \
+ -H 'content-length: 399' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Наслаждение девка тута нож ремень.","maxScore":58,"minScore":17,"description":"Более мотоцикл подземный упор. Свежий скрытый зарплата нервно висеть близко.","estimatedTime":"3 weeks","previewFileId":"87c1bc46-93b2-4e3a-beab-1fd81ea12bfc","createdByUserId":"b9c7933d-3cd4-401a-8cec-86e9df8655ac"}'

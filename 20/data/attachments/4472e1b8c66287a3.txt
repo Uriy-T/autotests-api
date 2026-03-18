@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:74 Check create course response
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Следовательно похороны реклама порядок полностью сопровождаться.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 86
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 22
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Налоговый премьера приятель умирать запустить выгнать. Социалистический вздрогнуть анализ низкий непривычный стакан. Экзамен точно сомнительный решение за витрина.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 10 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Налоговый премьера приятель умирать запустить выгнать. Социалистический вздрогнуть анализ низкий непривычный стакан. Экзамен точно сомнительный решение за витрина.
+INFO     BASE ASSERTIONS:base.py:32 Check that "preview_file_id" equals to 442463b1-cd1e-415d-abae-01f2b30fd7d7
+INFO     BASE ASSERTIONS:base.py:32 Check that "created_by_user_id" equals to 3cff2053-7cc3-40c3-a08f-f6ecba8c2b96
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjIwLjEwMjc2NiIsInVzZXJfaWQiOiIxNTc5NzJlYy1lM2U1LTRkYzUtYWE5MS02NWMzOTVkZjNlMzIifQ.fOKHl0XphAm8SZFMb3ybvfh1x5JYdKs3a3G9MtC6lH0' \
+ -H 'content-length: 433' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Собеседник деловой радость металл пропаганда падаль.","maxScore":58,"minScore":9,"description":"А отдел мелькнуть ночь. Валюта песенка цвет приятель обида сустав сынок очко.","estimatedTime":"9 weeks","previewFileId":"10f3b66b-5a62-406a-9538-4b60b2a436d1","createdByUserId":"157972ec-e3e5-4dc5-aa91-65c395df3e32"}'

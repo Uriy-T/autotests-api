@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjU4OjIxLjAzNzc0OCIsInVzZXJfaWQiOiJhMTU4OTBlMi0yZmRlLTRiY2EtODdiYi0yNDA4NTIyMzcwZjMifQ.OgO1V1Qz3TWy5SE9_P8im2urKlAA8PSP9k4E_iA7i8c' \
+ -H 'content-length: 490' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Жестокий тюрьма горький факультет.","maxScore":79,"minScore":14,"description":"Манера присесть услать штаб миф. Пробовать эффект разводить второй приличный. Исполнять коричневый поставить экзамен манера.","estimatedTime":"3 weeks","previewFileId":"87fceb6e-213e-4e5a-a14e-ac41a475618d","createdByUserId":"a15890e2-2fde-4bca-87bb-2408522370f3"}'
