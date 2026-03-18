@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI3LjIzMjYyNiIsInVzZXJfaWQiOiIyODU4ZTU2ZC0yYjEyLTQzZmYtOTM3Zi0zMjQ3ZTNlYjY3NjcifQ.ARQJ2rK22wKTyHaSGRn-ikCe5AoBQxX0KG1b34tKdiA' \
+ -H 'content-length: 442' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Актриса процесс радость рассуждение.","maxScore":76,"minScore":24,"description":"Роскошный поезд мрачно секунда неожиданно. Интеллектуальный монета жестокий устройство господь.","estimatedTime":"9 weeks","previewFileId":"717634f3-fa53-4a82-9237-ca8a94d8c892","createdByUserId":"2858e56d-2b12-43ff-937f-3247e3eb6767"}'

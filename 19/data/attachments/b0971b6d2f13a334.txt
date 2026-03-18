@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI2Ljk1OTI2MyIsInVzZXJfaWQiOiIzZWUxYjU3ZS03ZGE4LTRjNDktYTc2Yy03NzEyYWUxNjAzNWIifQ.EXkLzrAbo-zxBHx4Sju064fXxVQ0EoFjMl-EVlJYSnw' \
+ -H 'content-length: 539' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Изучить миф изображать наслаждение недостаток.","maxScore":76,"minScore":28,"description":"Строительство расстройство вперед поймать слишком выдержать ярко. Космос полностью команда поставить. Военный штаб райком нервно головка.","estimatedTime":"10 weeks","previewFileId":"ed49d5e7-bff1-4f13-8940-32c62ec99911","createdByUserId":"3ee1b57e-7da8-4c49-a76c-7712ae16035b"}'

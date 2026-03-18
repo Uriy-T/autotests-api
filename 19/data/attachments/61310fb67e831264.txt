@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises?courseId=f739f541-3fea-4295-9633-470132112faa
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises?courseId=f739f541-3fea-4295-9633-470132112faa
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Check get exercises list
+INFO     BASE ASSERTIONS:base.py:66 Check that length of exercises equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to d73d983f-9d98-440e-9cc6-abbb346a76d8
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Белье бочок дорогой поколение.
+INFO     BASE ASSERTIONS:base.py:32 Check that "course_id" equals to f739f541-3fea-4295-9633-470132112faa
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 77
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 4
+INFO     BASE ASSERTIONS:base.py:32 Check that "order_index" equals to 88
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Близко лапа степь освобождение. Помимо обида магазин решетка славный остановить.
+Коллектив заплакать белье плясать правый. Протягивать разводить проход направо тревога командир находить место.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 7 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

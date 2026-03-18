@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI1Ljc2Njg3OCIsInVzZXJfaWQiOiJhNDYwNTQ5ZS02NTEzLTRkY2EtYTlhYS05NGU3MDljNWQzYzEifQ.U43LXxwoZxAO_4BgnyPyQZ5hkiGOuDokqk0wnVJ6YIY' \
+ -H 'content-length: 603' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Неправда даль означать пропаганда полоска.","maxScore":61,"minScore":21,"description":"Заработать пища выраженный выражение передо триста возможно пища. Уточнить правый конференция порт важный дьявол неожиданно прощение. Коммунизм заведение термин функция близко.","estimatedTime":"6 weeks","previewFileId":"d8bc79d3-29a8-46c0-a5a5-5d107a733f88","createdByUserId":"a460549e-6513-4dca-a9aa-94e709c5d3c1"}'

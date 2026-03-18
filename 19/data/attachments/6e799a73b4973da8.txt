@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI0Ljg0MzE2NiIsInVzZXJfaWQiOiI5NjBlN2M1ZS03YTEwLTQyZDAtYTY2OS0xY2EzOTNkYzFkMDgifQ.XcF0G6L6_4lhKHFXwkUJ96IOxG8vv5y293qB41I66k4' \
+ -H 'content-length: 352' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Кольцо функция интеллектуальный передо перебивать.","maxScore":67,"minScore":19,"description":"Госпожа проход пространство тута.","estimatedTime":"1 weeks","previewFileId":"88a62f43-b5a7-40a4-ac5a-f4bb05b37b11","createdByUserId":"960e7c5e-7a10-42d0-a669-1ca393dc1d08"}'

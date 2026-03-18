@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/exercises/f69f87ca-1e70-47d8-97fc-7aca310e4be1 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI2LjA0MDg5NyIsInVzZXJfaWQiOiJjYTc4Y2UwMC1kM2RlLTQwNjYtYWI3ZC1lNmIzYmE2ODUxZjAifQ.CwSYLP8Pdj_cSc18T5rVql2rAdkohceE7RdMezcO66E' \
+ -H 'content-length: 355' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Очутиться прежний советовать дремать деловой.","maxScore":72,"minScore":14,"orderIndex":14,"description":"Развитый выгнать поймать разуметься приятель армейский торопливый. Волк подземный угол рот.","estimatedTime":"10 weeks"}'

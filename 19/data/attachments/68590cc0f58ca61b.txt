@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/cee301b2-6b8b-43d6-977c-25bca4a8f6d2 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI0LjU2OTk2NCIsInVzZXJfaWQiOiI4N2VkNWZjMC03Njg4LTQ0YTUtYTJjMS04YjVlOGIwYmZlZTAifQ.gVvqy1HHvCxBDGtBmOjoG2ejPJshdui5nU_9vF905uM' \
+ -H 'content-length: 459' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Печатать равнодушный грустный фонарик.","maxScore":61,"minScore":23,"description":"Сохранять эпоха заплакать пересечь бетонный командир радость. Картинка головка нож плод манера возможно. Бегать выбирать полоска естественный выгнать песня кидать.","estimatedTime":"4 weeks"}'

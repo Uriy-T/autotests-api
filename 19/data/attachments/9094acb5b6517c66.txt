@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI2LjA0MDg5NyIsInVzZXJfaWQiOiJjYTc4Y2UwMC1kM2RlLTQwNjYtYWI3ZC1lNmIzYmE2ODUxZjAifQ.CwSYLP8Pdj_cSc18T5rVql2rAdkohceE7RdMezcO66E' \
+ -H 'content-length: 501' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Четыре фонарик легко господь.","maxScore":56,"minScore":11,"description":"Встать природа народ советовать очутиться. Темнеть обида выразить совещание носок провал. Левый неправда строительство зеленый магазин.","estimatedTime":"4 weeks","previewFileId":"f5cc460f-961d-4faf-9229-1d26fe5ece9b","createdByUserId":"ca78ce00-d3de-4066-ab7d-e6b3ba6851f0"}'

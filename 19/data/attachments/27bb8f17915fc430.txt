@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI4LjE2OTM2MCIsInVzZXJfaWQiOiI1YTQ4ZGQzOS1mM2Y0LTRiODEtYWQ5OS1iOWU4OTg3ZmY3NWIifQ.XSDKHdkgQGuB-Ep2CbJI1dr2ynwStTIncwfs_DLWb-w' \
+ -H 'content-length: 612' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Команда изба неожиданно прежний.","maxScore":53,"minScore":24,"description":"Другой тесно пересечь вскинуть. Падаль плавно постоянный спасть еврейский висеть.\nНизкий вскинуть доставать деловой покидать что умолять мимо. Палка бровь неправда штаб лапа торопливый трубка.","estimatedTime":"4 weeks","previewFileId":"081c61fb-b03b-4f9c-9ff4-1eb4d859f5e6","createdByUserId":"5a48dd39-f3f4-4b81-ad99-b9e8987ff75b"}'

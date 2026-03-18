@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjUxOjI0LjU2OTk2NCIsInVzZXJfaWQiOiI4N2VkNWZjMC03Njg4LTQ0YTUtYTJjMS04YjVlOGIwYmZlZTAifQ.gVvqy1HHvCxBDGtBmOjoG2ejPJshdui5nU_9vF905uM' \
+ -H 'content-length: 422' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Появление постоянный отъезд поймать бегать степь возбуждение около.","maxScore":51,"minScore":11,"description":"Жить господь мучительно упор проход банк освобождение.","estimatedTime":"6 weeks","previewFileId":"d3bbc7d0-fc80-48c5-a7ab-cc6a0c0f5cb7","createdByUserId":"87ed5fc0-7688-44a5-a2c1-8b5e8b0bfee0"}'
