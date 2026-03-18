@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM0OjU5LjgzMDkyNCIsInVzZXJfaWQiOiI4ZmJkYzQxMC0zY2EyLTQ2MDItYjliYy1kNGI3ZDM4MWRhZWEifQ.HfH_aiUuAzf0X2NuKCn5snW71bAW3OTiu-W3yV1_Cwo' \
+ -H 'content-length: 587' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Миг пол жестокий упор близко услать цвет.","maxScore":66,"minScore":1,"description":"Мальчишка висеть о лететь ручей цвет понятный монета. Да присесть дурацкий иной вперед направо конструкция изучить. Непривычный рис полностью карандаш наступать поставить.","estimatedTime":"7 weeks","previewFileId":"0e68448d-0d8d-4daf-9607-f463f59ae1bb","createdByUserId":"8fbdc410-3ca2-4602-b9bc-d4b7d381daea"}'

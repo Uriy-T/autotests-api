@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/exercises \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAxLjMwMDExNyIsInVzZXJfaWQiOiI4NWEzODg4OS02YWZmLTQ1MTQtYjJjNS03NzhmYmIwYmJkYzQifQ.PL-9Ed1d5YvFWwGrEXZcI9IMvRjY0yZ3VOoCII5ipj4' \
+ -H 'content-length: 423' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Собеседник собеседник одиннадцать.","courseId":"0387f555-6eb7-4ba8-9249-0e18a9912f01","maxScore":80,"minScore":11,"orderIndex":75,"description":"Товар нажать вскинуть четыре сходить. Смертельный инструкция гулять кидать. Торопливый второй актриса подземный.","estimatedTime":"9 weeks"}'

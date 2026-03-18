@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAxLjMwMDExNyIsInVzZXJfaWQiOiI4NWEzODg4OS02YWZmLTQ1MTQtYjJjNS03NzhmYmIwYmJkYzQifQ.PL-9Ed1d5YvFWwGrEXZcI9IMvRjY0yZ3VOoCII5ipj4' \
+ -H 'content-length: 483' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Очередной аж дремать.","maxScore":86,"minScore":17,"description":"Плод применяться угодный сбросить бабочка. Командование похороны сверкать устройство научить. Актриса господь четко заведение трубка.","estimatedTime":"8 weeks","previewFileId":"6a6dcefd-7cae-46e9-b810-34b2c8d36255","createdByUserId":"85a38889-6aff-4514-b2c5-778fbb0bbdc4"}'

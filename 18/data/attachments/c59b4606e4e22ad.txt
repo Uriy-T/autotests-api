@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAzLjQwNTU3NCIsInVzZXJfaWQiOiI5NTI0NGU0ZS01MDdkLTRjNDktYTIzNi0wOTFmZDY4YWE4MGQifQ.RPkjmMfkQgvervz-LI0Mc0l7SYAz9psUnvGjsvnuuJA' \
+ -H 'content-length: 512' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Медицина хотеть уничтожение совет опасность коробка торговля.","maxScore":55,"minScore":22,"description":"Желание командующий стакан около перебивать багровый потрясти. Школьный актриса снимать спорт добиться жить.","estimatedTime":"4 weeks","previewFileId":"c5366840-4c35-4978-91cd-af2994c5641f","createdByUserId":"95244e4e-507d-4c49-a236-091fd68aa80d"}'

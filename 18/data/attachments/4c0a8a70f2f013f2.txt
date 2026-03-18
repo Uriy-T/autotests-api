@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAxLjAyNzExMyIsInVzZXJfaWQiOiI2MTU1OTdhZi04NjYwLTRkNzAtYjUwOC1kMzNkYjVjZjZjODkifQ.twSMPQRXgIGc9Hz_Bi9qlVxujQdUOUEl74wlvZfBo8s' \
+ -H 'content-length: 595' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Граница ручей ручей дурацкий военный собеседник бок.","maxScore":75,"minScore":13,"description":"Покинуть коллектив назначить обида порядок. Поезд посвятить избегать багровый командующий выкинуть вчера. Медицина зато командующий встать салон команда ответить.","estimatedTime":"3 weeks","previewFileId":"8ecd9f41-6536-4903-a615-09fc180019a1","createdByUserId":"615597af-8660-4d70-b508-d33db5cf6c89"}'

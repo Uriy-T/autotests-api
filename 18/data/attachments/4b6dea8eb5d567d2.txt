@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises?courseId=f1e000ad-7b1f-4785-8f6d-93764ce48058
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/exercises?courseId=f1e000ad-7b1f-4785-8f6d-93764ce48058
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Check get exercises list
+INFO     BASE ASSERTIONS:base.py:66 Check that length of exercises equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE ASSERTIONS:base.py:32 Check that "id" equals to b1ff491f-2c40-4f8e-a37a-37cde9bde6bd
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Торговля идея проход протягивать успокоиться.
+INFO     BASE ASSERTIONS:base.py:32 Check that "course_id" equals to f1e000ad-7b1f-4785-8f6d-93764ce48058
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 77
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 29
+INFO     BASE ASSERTIONS:base.py:32 Check that "order_index" equals to 6
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Выражаться жидкий доставать костер.
+Достоинство спешить июнь спасть заработать развернуться витрина. Стакан конструкция наступать.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 7 weeks
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema

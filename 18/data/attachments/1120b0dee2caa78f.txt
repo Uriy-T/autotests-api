@@ -1,0 +1,11 @@
+curl -x 'PATCH \
+ http://localhost:8000/api/v1/courses/4a645ae0-ef9c-43ae-988b-f1ffb9334625 \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM0OjU5LjgzMDkyNCIsInVzZXJfaWQiOiI4ZmJkYzQxMC0zY2EyLTQ2MDItYjliYy1kNGI3ZDM4MWRhZWEifQ.HfH_aiUuAzf0X2NuKCn5snW71bAW3OTiu-W3yV1_Cwo' \
+ -H 'content-length: 423' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Интернет ломать житель радость ленинград.","maxScore":52,"minScore":2,"description":"Рис даль роса горький палка горький картинка. Пространство отдел эффект ученый затянуться. Беспомощный издали изучить сверкать сустав спалить.","estimatedTime":"4 weeks"}'

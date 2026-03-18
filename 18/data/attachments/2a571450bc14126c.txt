@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAyLjIxMjEzMCIsInVzZXJfaWQiOiI5MTUxYTM2Zi0yMzc2LTQ4MmItOTRkNC00ZWU0ZjI1OWJjMzMifQ.qqO2Vn70RUuDk2FwKLGV0CsAEqfCDk-EyrM27NIHZ54' \
+ -H 'content-length: 546' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Отметить висеть миф монета.","maxScore":98,"minScore":5,"description":"Мелькнуть адвокат правление добиться. Хотеть хотеть покидать развернуться уронить песенка. Четко интеллектуальный актриса промолчать сверкать легко ныне функция.","estimatedTime":"4 weeks","previewFileId":"81c2b063-ab6e-4d20-8dd8-b66fa41bedac","createdByUserId":"9151a36f-2376-482b-94d4-4ee4f259bc33"}'

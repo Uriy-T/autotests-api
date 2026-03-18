@@ -1,0 +1,11 @@
+curl -x 'POST \
+ http://localhost:8000/api/v1/courses \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE4VDExOjM1OjAyLjQ4NTgyOCIsInVzZXJfaWQiOiIyN2U4OWI2Ni04ODIwLTQ5YjAtYTQ1MC1jMDQ4YTQ5ZTAyZTEifQ.Ch5wnGd2hSaj7G1GEvFXv0dOPWRD3_mhYFdoA7GlaJQ' \
+ -H 'content-length: 505' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Похороны песня спорт спичка аллея.","maxScore":95,"minScore":16,"description":"Еврейский очутиться рассуждение дальний. Аж сынок призыв следовательно столетие интеллектуальный. Палец число доставать грудь новый.","estimatedTime":"6 weeks","previewFileId":"d4754aad-373f-48fe-b0cf-7980f5fa9922","createdByUserId":"27e89b66-8820-49b0-a450-c048a49e02e1"}'

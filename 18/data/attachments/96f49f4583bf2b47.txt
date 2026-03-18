@@ -1,0 +1,23 @@
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:74 Check create course response
+INFO     BASE ASSERTIONS:base.py:32 Check that "title" equals to Товар покинуть крутой самостоятельно господь коричневый прощение.
+INFO     BASE ASSERTIONS:base.py:32 Check that "max_score" equals to 74
+INFO     BASE ASSERTIONS:base.py:32 Check that "min_score" equals to 26
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Рота функция секунда столетие понятный. Засунуть налоговый бровь заявление. Монета еврейский холодно.
+Указанный июнь прощение виднеться дьявол уронить.
+INFO     BASE ASSERTIONS:base.py:32 Check that "estimated_time" equals to 1 weeks
+INFO     BASE ASSERTIONS:base.py:32 Check that "description" equals to Рота функция секунда столетие понятный. Засунуть налоговый бровь заявление. Монета еврейский холодно.
+Указанный июнь прощение виднеться дьявол уронить.
+INFO     BASE ASSERTIONS:base.py:32 Check that "preview_file_id" equals to 63de5083-3823-48f9-9277-4aebafe6c0be
+INFO     BASE ASSERTIONS:base.py:32 Check that "created_by_user_id" equals to e0266b2a-f107-4cd0-9033-48dccc90a69f
+INFO     VALIDATE JSON SCHEMA:schema.py:18 Validate JSON schema
