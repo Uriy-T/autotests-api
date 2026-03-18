@@ -18,7 +18,7 @@ class ExercisesClient(APIClient):
         Метод получения списка упражнений по uuid курса.
 
         :param courseid: идентификатор курса в uuid формате.
-        :return: Ответ от сервера в виде объекта httpx.Response.
+        :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(f'{APIRoutes.EXERCISES}?courseId={courseid}')
 
